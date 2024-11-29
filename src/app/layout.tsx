@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
+import PhoneDynamic from "./components/phone-dynamic/phone-dynamic";
+import ZaloDynamic from "./components/zalo-dynamic/zalo-dynamic";
 
 export const metadata: Metadata = {
   title: "Thu Mua Phế Liệu Tài Lộc Vi Na",
@@ -21,6 +24,9 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <PhoneDynamic />
+        <ZaloDynamic />
+
         <Footer />
       </body>
     </html>
