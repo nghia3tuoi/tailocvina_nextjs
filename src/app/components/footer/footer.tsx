@@ -3,7 +3,7 @@ import { MdEmail, MdAccessTimeFilled } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0d1c25] w-full font-sans">
+    <footer className="bg-[#0d1c25] w-full ">
       <div className="container px-4 mx-auto">
         {/* hr */}
         <div className="container mx-auto my-7 px-4 border-b-white/20 border-b-2"></div>
@@ -16,34 +16,43 @@ const Footer = () => {
               </h3>
               <div className="mb-2">
                 <div className="flex items-center gap-1">
-                  <FaLocationDot className="text-[#86bb46]" />
+                  <div>
+                    <FaLocationDot className="text-[#86bb46] text-xl" />
+                  </div>
                   <p className="text-white/70">Địa chỉ</p>
                 </div>
-                <p className="text-white  pl-4">
+                <p className="text-white  pl-6">
                   Thửa đất số 1046, tờ bản đồ số 171, khu phố Hòa Lân 2, Phường
                   Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam
                 </p>
               </div>
               <div className="mb-2">
                 <div className="flex items-center gap-1">
-                  <MdEmail className="text-[#86bb46] text-xl" />
-                  <p className="text-white/70">Email</p>
-                </div>
-                <p className="text-white  pl-4">tailocvina.work@gmail.com</p>
-              </div>
-              <div className="mb-2">
-                <div className="flex items-center gap-1">
-                  <FaPhone className="text-[#86bb46]" />
+                  <div>
+                    <FaPhone className="text-[#86bb46] text-xl" />
+                  </div>
                   <p className="text-white/70">Hotline</p>
                 </div>
-                <p className="text-white  pl-4">0989 015 053</p>
+                <p className="text-white  pl-6">0989 015 053</p>
               </div>
               <div className="mb-2">
                 <div className="flex items-center gap-1">
-                  <MdAccessTimeFilled className="text-[#86bb46] text-xl" />
+                  <div>
+                    <MdEmail className="text-[#86bb46] text-xl" />
+                  </div>
+                  <p className="text-white/70">Email</p>
+                </div>
+                <p className="text-white  pl-6">tailocvina.work@gmail.com</p>
+              </div>
+
+              <div className="mb-2">
+                <div className="flex items-center gap-1">
+                  <div>
+                    <MdAccessTimeFilled className="text-[#86bb46] text-xl" />
+                  </div>
                   <p className="text-white/70">Thứ 2 - Chủ nhật</p>
                 </div>
-                <p className="text-white  pl-4">Hỗ trợ tư vấn 24/7</p>
+                <p className="text-white  pl-6">Hỗ trợ tư vấn 24/7</p>
               </div>
             </li>
             <li>

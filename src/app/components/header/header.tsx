@@ -54,7 +54,7 @@ const Header = () => {
     <div>
       <header className="bg-slate-500">
         <div className="bg-colorPrimary">
-          <div className="flex md:justify-between justify-center md:max-w-[1170px] mx-auto p-1 items-center px-3.5 w-full">
+          <div className="flex md:justify-between justify-center md:container mx-auto py-1 items-center px-4 w-full">
             {/* tablet */}
             <div>
               <p className="text-xs text-textPrimary uppercase font-bold hidden md:block">
@@ -89,16 +89,15 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white h-24 flex justify-center">
-          <div className="flex md:max-w-[1170px]  items-center md:justify-between w-full  px-3.5">
-            <div className="md:hidden">
+        <div className="bg-white h-24 flex justify-center items-center relative">
+          <div className="flex md:container items-center md:justify-between w-full px-4">
+            <div className="md:hidden absolute">
               <MdOutlineMenu
                 className="mr-3 text-3xl text-black/80  cursor-pointer"
                 onClick={handleToggleMenu}
               />
             </div>
-
-            <Link href="/" className="mx-auto md:mx-0">
+            <Link href="/" className="mx-auto md:mx-0 z-10">
               <Image
                 src="/logo-horizontal.svg"
                 priority
@@ -119,12 +118,12 @@ const Header = () => {
           </div>
         </div>
         <div className="bg-colorPrimary hidden md:block">
-          <div className="w-[1170px] mx-auto flex items-center px-3.5">
+          <div className="md:container max-w-full mx-auto flex items-center px-4">
             <ul className="flex items-center py-2">
               <li>
                 <Link
                   href="/"
-                  className="uppercase text-textPrimary text-sm font-bold py-2 mr-2"
+                  className="uppercase text-textPrimary text-sm font-bold py-2 mr-2 hover:text-textColorTitle"
                 >
                   Trang chủ
                 </Link>
@@ -132,23 +131,42 @@ const Header = () => {
               <li>
                 <Link
                   href="/gioi-thieu"
-                  className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2"
+                  className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2 hover:text-textColorTitle"
                 >
                   Giới thiệu
                 </Link>
               </li>
-              <li>
+              <li className="relative group">
                 <Link
                   href="/about"
-                  className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2"
+                  className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2 hover:text-textColorTitle"
                 >
-                  DANH MỤC THU MUA
+                  Thu mua phế liệu giá cao
                 </Link>
+                {/* dropdown */}
+                <ul className="z-10 hidden group-hover:block bg-colorPrimary top-[125%] absolute divide-y divide-white/20 rounded-sm w-60">
+                    <li>
+                      <Link
+                        href="/thu-mua-vai-vun-gia-cao"
+                        className="hover:text-textColorTitle  text-sm px-2 py-4 font-bold text-white block capitalize"
+                      >
+                        Thu mua vải vụn số lượng lớn giá cao
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/thu-gom-xu-ly-rac-thai-gia-re"
+                        className=" hover:text-textColorTitle text-sm px-2 py-4 font-bold text-white block capitalize"
+                      >
+                        Thu Gôm Xử Lí Rác Thải Giá rẻ
+                      </Link>
+                    </li>
+                  </ul>
               </li>
               <li>
                 <Link
                   href="/lien-he"
-                  className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2"
+                  className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2 hover:text-textColorTitle"
                 >
                   Liên hệ
                 </Link>
@@ -205,13 +223,32 @@ const Header = () => {
                     Giới thiệu
                   </Link>
                 </li>
-                <li>
+                <li className="relative group">
                   <Link
                     href="#"
-                    className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2"
+                    className="uppercase text-textPrimary text-sm font-bold py-2 mx-2"
                   >
                     Thu mua phế liệu giá cao
                   </Link>
+                  {/* dropdown */}
+                  <ul className="group-hover:block hidden bg-colorPrimary top-[125%] absolute divide-y divide-white/20 rounded-sm w-60">
+                    <li>
+                      <Link
+                         href="/thu-mua-vai-vun-gia-cao"
+                        className="hover:text-textColorTitle  text-sm px-2 py-4 font-bold text-white block capitalize"
+                      >
+                        Thu mua vải vụn số lượng lớn giá cao
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/thu-gom-xu-ly-rac-thai-gia-re"
+                        className=" hover:text-textColorTitle text-sm px-2 py-4 font-bold text-white block capitalize"
+                      >
+                         Thu Gôm Xử Lí Rác Thải Giá rẻ
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <Link

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const GioiThieu = () => {
   return (
-    <div className="mx-auto container px-4 font-sans">
+    <div className="mx-auto container px-4">
       <div className="pt-7">
         <h1 className=" text-xl font-bold mb-3 capitalize text-justify">
           Giới thiệu về Công ty TNHH Tài Lộc Vi Na – Chuyên thu mua phế liệu,
@@ -117,15 +117,16 @@ const GioiThieu = () => {
       </div>
       <div>
         <h2 className="text-lg  font-bold mt-7 mb-3 capitalize">
-          Thông tin liên hệ
+          Thông tin liên hệ Thu Mua Phế Liệu Tài Lộc Vi Na
         </h2>
         <p className="text-justify leading-relaxed">
-          Địa chỉ: Thửa đất số 1046, tờ bản đồ số 171, khu phố Hòa Lân 2, Phường
-          Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam
+          <span className="font-bold">Địa chỉ:</span> Thửa đất số 1046, tờ bản đồ số 171, khu phố Hòa
+          Lân 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt
+          Nam
         </p>
-        <p className="text-justify leading-relaxed">Holine: 0989 015 053</p>
+        <p className="text-justify leading-relaxed"><span className="font-bold">Holine:</span> 0989 015 053</p>
         <p className="text-justify leading-relaxed">
-          Email: tailocvina.work@gmail.com
+          <span className="font-bold">Email:</span> tailocvina.work@gmail.com
         </p>
       </div>
       <div className="pb-7">
@@ -153,7 +154,7 @@ const GioiThieu = () => {
             src="/giay-phep-kinh-doanh-tai-loc-vi-na-1-edit.png"
             alt="giay-phep-kinh-doanh-cong-ty-tai-loc-vi-na"
             width={480} // Chiều rộng gốc của ảnh
-            height={640} // Chiều cao gốc của ảnh
+            height={0} // Chiều cao gốc của ảnh
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
 
