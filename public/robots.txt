@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tailocvina.vercel.app/
+
+# Sitemaps
+Sitemap: https://tailocvina.vercel.app/sitemap.xml
