@@ -137,31 +137,28 @@ const Header = () => {
                 </Link>
               </li>
               <li className="relative group">
-                <Link
-                  href="/about"
-                  className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2 hover:text-textColorTitle"
-                >
+                <div className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2 hover:text-textColorTitle cursor-pointer">
                   Thu mua phế liệu giá cao
-                </Link>
+                </div>
                 {/* dropdown */}
                 <ul className="z-10 hidden group-hover:block bg-colorPrimary top-[125%] absolute divide-y divide-white/20 rounded-sm w-60">
-                    <li>
-                      <Link
-                        href="/thu-mua-vai-vun-gia-cao"
-                        className="hover:text-textColorTitle  text-sm px-2 py-4 font-bold text-white block capitalize"
-                      >
-                        Thu mua vải vụn số lượng lớn giá cao
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/thu-gom-xu-ly-rac-thai-gia-re"
-                        className=" hover:text-textColorTitle text-sm px-2 py-4 font-bold text-white block capitalize"
-                      >
-                        Thu Gôm Xử Lí Rác Thải Giá rẻ
-                      </Link>
-                    </li>
-                  </ul>
+                  <li>
+                    <Link
+                      href="/thu-mua-vai-vun-gia-cao"
+                      className="hover:text-textColorTitle  text-sm px-2 py-4 font-bold text-white block capitalize"
+                    >
+                      Thu mua vải vụn số lượng lớn giá cao
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/thu-gom-xu-ly-rac-thai-gia-re"
+                      className=" hover:text-textColorTitle text-sm px-2 py-4 font-bold text-white block capitalize"
+                    >
+                      Thu Gôm Xử Lí Rác Thải Giá rẻ
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <Link
@@ -224,17 +221,14 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="relative group">
-                  <Link
-                    href="#"
-                    className="uppercase text-textPrimary text-sm font-bold py-2 mx-2"
-                  >
+                  <div className="uppercase text-textPrimary text-sm font-bold py-2 mx-2 cursor-pointer">
                     Thu mua phế liệu giá cao
-                  </Link>
+                  </div>
                   {/* dropdown */}
                   <ul className="group-hover:block hidden bg-colorPrimary top-[125%] absolute divide-y divide-white/20 rounded-sm w-60">
                     <li>
                       <Link
-                         href="/thu-mua-vai-vun-gia-cao"
+                        href="/thu-mua-vai-vun-gia-cao"
                         className="hover:text-textColorTitle  text-sm px-2 py-4 font-bold text-white block capitalize"
                       >
                         Thu mua vải vụn số lượng lớn giá cao
@@ -245,7 +239,7 @@ const Header = () => {
                         href="/thu-gom-xu-ly-rac-thai-gia-re"
                         className=" hover:text-textColorTitle text-sm px-2 py-4 font-bold text-white block capitalize"
                       >
-                         Thu Gôm Xử Lí Rác Thải Giá rẻ
+                        Thu Gôm Xử Lí Rác Thải Giá rẻ
                       </Link>
                     </li>
                   </ul>

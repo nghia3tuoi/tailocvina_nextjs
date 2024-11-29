@@ -1,4 +1,12 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Thu Gôm Xử Lí Rác Thải Giá Rẻ - Công Ty TNHH Tài Lộc Vi Na Thu Mua Phế Liệu Giá Cao",
+  description:
+  "Công Ty TNHH Tài Lộc Vi Na cung cấp dịch vụ thu gom và xử lý rác thải giá rẻ, nhanh chóng và hiệu quả. Với nhiều năm kinh nghiệm trong ngành, chúng tôi cam kết mang đến giải pháp xử lý rác thải an toàn, bảo vệ môi trường và tối ưu chi phí cho khách hàng. Liên hệ với chúng tôi để được tư vấn dịch vụ xử lý rác thải tốt nhất.",
+};
+
 const XuLiRacThai = () => {
   return (
     <div className="container mx-auto px-4">

@@ -1,4 +1,11 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Giới Thiệu - Công Ty TNHH Tài Lộc Vi Na Thu Mua Phế Liệu Giá Cao",
+  description:
+    "Công Ty TNHH Tài Lộc Vi Na chuyên thu mua phế liệu giá cao, cam kết uy tín và chất lượng dịch vụ. Với nhiều năm kinh nghiệm trong ngành, chúng tôi cung cấp dịch vụ thu mua phế liệu nhanh chóng, an toàn và bảo vệ môi trường. Khám phá sứ mệnh, tầm nhìn và các giá trị cốt lõi của chúng tôi để hiểu thêm về cam kết của công ty.",
+};
 
 const GioiThieu = () => {
   return (
@@ -120,11 +127,13 @@ const GioiThieu = () => {
           Thông tin liên hệ Thu Mua Phế Liệu Tài Lộc Vi Na
         </h2>
         <p className="text-justify leading-relaxed">
-          <span className="font-bold">Địa chỉ:</span> Thửa đất số 1046, tờ bản đồ số 171, khu phố Hòa
-          Lân 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt
-          Nam
+          <span className="font-bold">Địa chỉ:</span> Thửa đất số 1046, tờ bản
+          đồ số 171, khu phố Hòa Lân 2, Phường Thuận Giao, Thành phố Thuận An,
+          Tỉnh Bình Dương, Việt Nam
         </p>
-        <p className="text-justify leading-relaxed"><span className="font-bold">Holine:</span> 0989 015 053</p>
+        <p className="text-justify leading-relaxed">
+          <span className="font-bold">Holine:</span> 0989 015 053
+        </p>
         <p className="text-justify leading-relaxed">
           <span className="font-bold">Email:</span> tailocvina.work@gmail.com
         </p>
