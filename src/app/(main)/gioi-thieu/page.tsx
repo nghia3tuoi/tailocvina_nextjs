@@ -15,12 +15,7 @@ const GioiThieu = () => {
           Dương, Tp HCM, Long An, Vũng Tàu, Miền Tây,…
         </p>
         <br />
-        <p className="text-justify leading-relaxed">
-          Quý khách có nhu cầu bán phế liệu, xin vui lòng liên hệ:{" "}
-          <strong> 0989 015 053 </strong>
-          để được tư vấn dịch vụ thu mua chu đáo nhất.
-        </p>
-        <br />
+
         <p className="text-justify leading-relaxed">
           Thu mua phế liệu Tài Lộc Vi Na là cơ sở thu mua phế liệu hoạt động lâu
           đời trên toàn quốc, với uy tín cao, chúng tôi luôn đáp ứng mọi nhu cầu
@@ -39,6 +34,12 @@ const GioiThieu = () => {
           </strong>{" "}
           , tất cả các loại phế liệu có thể tái chế , thu gôm và xử lý rác thải
           công nghiệp.
+        </p>
+        <br />
+        <p className="text-justify leading-relaxed">
+          Quý khách có nhu cầu bán phế liệu, xin vui lòng liên hệ:{" "}
+          <strong> 0989 015 053 </strong>
+          để được tư vấn dịch vụ thu mua chu đáo nhất.
         </p>
       </div>
       <div>

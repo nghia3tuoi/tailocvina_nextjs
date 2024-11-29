@@ -142,12 +142,12 @@ const Header = () => {
                   href="/about"
                   className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2"
                 >
-                  Thu mua phế liệu giá cao
+                  DANH MỤC THU MUA
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/lien-he"
                   className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2"
                 >
                   Liên hệ

@@ -41,14 +41,15 @@ const MenuHeader = ({ handleToggleMenu, menuRef }: Props) => {
               className="block py-3 pl-5 text-[#8b8b8b] font-bold uppercase text-xs hover:text-black hover:bg-black/5"
               onClick={handleToggleMenu}
             >
-              Thu mua phế liệu giá cao
+              DANH MỤC THU MUA
             </Link>
           </li>
           <li>
             <Link
               href="/lien-he"
               className="block py-3 pl-5 text-[#8b8b8b] font-bold uppercase text-xs hover:text-black hover:bg-black/5"
-              onClick={handleToggleMenu}>
+              onClick={handleToggleMenu}
+            >
               Liên hệ
             </Link>
           </li>
