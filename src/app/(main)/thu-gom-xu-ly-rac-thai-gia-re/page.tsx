@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { FaFacebookMessenger } from "react-icons/fa";
 const XuLiRacThai = () => {
   return (
     <div className="container mx-auto px-4">
