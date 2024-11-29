@@ -3,7 +3,7 @@ import { MdEmail, MdAccessTimeFilled } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0d1c25] w-full">
+    <footer className="bg-[#0d1c25] w-full font-sans">
       <div className="container px-4 mx-auto">
         {/* hr */}
         <div className="container mx-auto my-7 px-4 border-b-white/20 border-b-2"></div>
@@ -29,9 +29,7 @@ const Footer = () => {
                   <MdEmail className="text-[#86bb46] text-xl" />
                   <p className="text-white/70">Email</p>
                 </div>
-                <p className="text-white  pl-4">
-                  tailocvina.work@gmail.com
-                </p>
+                <p className="text-white  pl-4">tailocvina.work@gmail.com</p>
               </div>
               <div className="mb-2">
                 <div className="flex items-center gap-1">
@@ -52,11 +50,15 @@ const Footer = () => {
               <h3 className="text-white text-xl font-bold mb-3 uppercase">
                 DANH MỤC THU MUA
               </h3>
-              <p className="text-white/90">
-                <strong>Công Ty TNHH Tài Lộc Vi Na</strong> chuyên thu mua vải
-                vụn, hàng tồn, phế liệu, hàng thanh lý giá cao các loại, hỗ trợ
-                xử lí rác thải công nghiệp. Khi bạn cần chúng tôi có, khi bạn
-                khó hãy gọi chúng tôi.
+              <p className="text-white/80 text-justify leading-relaxed">
+                <strong>Công Ty TNHH Tài Lộc Vi Na</strong> tự hào là đơn vị
+                <strong> thu mua phế liệu</strong>, <strong>vải vụn</strong>,
+                <strong> hàng tồn kho</strong>, và{" "}
+                <strong>hàng thanh lý</strong> uy tín, giá cao. Chúng tôi chuyên
+                thu gom và xử lý <strong>rác thải công nghiệp</strong> nhanh
+                chóng, đảm bảo an toàn môi trường. Hãy liên hệ ngay với{" "}
+                <strong>Tài Lộc Vi Na</strong> – khi bạn cần, chúng tôi sẵn sàng
+                có mặt!
               </p>
             </li>
             <li>
@@ -64,22 +66,22 @@ const Footer = () => {
                 KHU VỰC THU MUA
               </h3>
               <ul>
-                <li className="text-white/90">
+                <li className="text-white/80">
                   <p>- Thu mua phế liệu HCM</p>
                 </li>
-                <li className="text-white/90">
+                <li className="text-white/80">
                   <p>- Thu mua phế liệu Bình Dương</p>
                 </li>
-                <li className="text-white/90">
+                <li className="text-white/80">
                   <p>- Thu mua phế liệu Đồng Nai</p>
                 </li>
-                <li className="text-white/90">
+                <li className="text-white/80">
                   <p>- Thu mua phế liệu Long An</p>
                 </li>
-                <li className="text-white/90">
+                <li className="text-white/80">
                   <p>- Thu mua phế liệu Miền Tây</p>
                 </li>
-                <li className="text-white/90">
+                <li className="text-white/80">
                   <p>- Thu mua phế liệu Tây Ninh</p>
                 </li>
               </ul>

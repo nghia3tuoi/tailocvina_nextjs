@@ -1,0 +1,190 @@
+import Image from "next/image";
+
+const GioiThieu = () => {
+  return (
+    <div className="mx-auto container px-4 font-sans">
+      <div className="pt-7">
+        <h1 className=" text-xl font-bold mb-3 capitalize text-justify">
+          Giới thiệu về Công ty TNHH Tài Lộc Vi Na – Chuyên thu mua phế liệu,
+          vải vụn số lượng lớn, thu gôm và xử lý rác thải công nghiệp
+        </h1>
+        <p className="text-justify leading-relaxed">
+          <strong>Công ty thu mua phế liệu Tài Lộc Vi Na </strong> chuyên thu
+          mua vải vụn số lượng lớn, phế liệu, hàng tồn, xử lí rác công nghiệp
+          tại các tỉnh thành, chủ yếu là các tỉnh phía Nam như Đồng Nai, Bình
+          Dương, Tp HCM, Long An, Vũng Tàu, Miền Tây,…
+        </p>
+        <br />
+        <p className="text-justify leading-relaxed">
+          Quý khách có nhu cầu bán phế liệu, xin vui lòng liên hệ:{" "}
+          <strong> 0989 015 053 </strong>
+          để được tư vấn dịch vụ thu mua chu đáo nhất.
+        </p>
+        <br />
+        <p className="text-justify leading-relaxed">
+          Thu mua phế liệu Tài Lộc Vi Na là cơ sở thu mua phế liệu hoạt động lâu
+          đời trên toàn quốc, với uy tín cao, chúng tôi luôn đáp ứng mọi nhu cầu
+          của khách hàng, thu mua phế liệu giá cao, thực hiện nhanh gọn, không
+          ngại xa, luôn có đội ngũ nhân viên thu mua tận nơi, đáp ứng 24/24h.
+        </p>
+        <br />
+        <p className="text-justify leading-relaxed">
+          Chúng tôi chuyên thu mua tất cả các loại phế liệu với số lượng lớn,
+          như
+          <strong>
+            {" "}
+            thu mua vải vụn, thu mua phế liệu kim loại, giấy, bao bì, nhựa, thu
+            mua phế liệu đồng, thu mua phế liệu nhôm, thu mua phế liệu inox, thu
+            mua phế liệu kẽm
+          </strong>{" "}
+          , tất cả các loại phế liệu có thể tái chế , thu gôm và xử lý rác thải
+          công nghiệp.
+        </p>
+      </div>
+      <div>
+        <h2 className="text-lg  font-bold mt-7 mb-3">
+          Chúng Tôi Thu Mua Phế Liệu Số Lượng Lớn
+        </h2>
+        <p className="text-justify leading-relaxed">
+          Công ty TNHH Tài Lộc Vi Na chuyên thu mua các loại phế liệu như sắt
+          thép, nhôm, đồng, inox, giấy vụn, nhựa và nhiều loại vật liệu tái chế
+          khác. Chúng tôi nhận thu mua phế liệu số lượng lớn từ các doanh
+          nghiệp, xí nghiệp, nhà máy, công trình xây dựng, giúp khách hàng giảm
+          thiểu chi phí và tăng cường bảo vệ môi trường.
+        </p>
+      </div>
+      <div>
+        <h2 className="text-lg  font-bold mt-7 mb-3">
+          Chúng Tôi Thu Mua Vải Vụn Số Lượng Lớn
+        </h2>
+        <p className="text-justify leading-relaxed">
+          Ngoài thu mua phế liệu, Tài Lộc Vi Na còn cung cấp dịch vụ thu mua vải
+          vụn số lượng lớn từ các nhà máy may mặc, các cơ sở sản xuất vải và các
+          cửa hàng thời trang. Chúng tôi chuyên xử lý và tái chế vải vụn thành
+          các sản phẩm có giá trị, giúp giảm thiểu ô nhiễm môi trường và tối ưu
+          hóa quá trình sản xuất.
+        </p>
+      </div>
+      <div>
+        <h2 className="text-lg  font-bold mt-7 mb-3">
+          Chúng Tôi Thu gom và xử lý rác thải công nghiệp
+        </h2>
+        <p className="text-justify leading-relaxed">
+          Rác thải công nghiệp là một trong những vấn đề môi trường cần được
+          giải quyết một cách hiệu quả. Tại Tài Lộc Vi Na, chúng tôi cung cấp
+          dịch vụ thu gom và xử lý rác thải công nghiệp đúng quy trình và an
+          toàn. Các loại rác thải như hóa chất, nhựa, kim loại và các vật liệu
+          nguy hiểm khác sẽ được xử lý một cách chuyên nghiệp và bảo vệ sức khỏe
+          cộng đồng.
+        </p>
+      </div>
+      <div>
+        <h2 className="text-lg font-bold mt-7 mb-3">
+          Thu mua phế liệu Tài Lộc Vi Na uy tín – nhanh gọn – giá cao
+        </h2>
+        <p className="mb-2">
+          Với phương châm “Luôn đáp ứng nhu cầu của khách hàng “, chúng tôi đảm
+          bảo rằng:
+        </p>
+        <ul className="list-disc ml-6 text-justify leading-loose">
+          <li>
+            Giá cả cạnh tranh: chúng tôi đảm bảo thu mua với giá cao nhất thị
+            trường.
+          </li>
+          <li>Mua bán nhanh chóng, thanh toán thuận tiện.</li>
+          <li>
+            Không ngại số lượng: chúng tôi luôn phục vụ bạn dù số lượng ít
+          </li>
+          <li>Luôn lấy uy tín làm trên hết.</li>
+          <li>
+            Đừng bỏ đi những gì dù chỉ là ve chai. Xin đưa nó cho chúng tôi
+          </li>
+          <li>Hãy bán tất cả những gì bạn cho là không xài được</li>
+          <li>
+            Thời gian thu mua 24 / 24 và tất cả ngày trong tuần (kể cả chủ nhật)
+          </li>
+          <li>
+            Thu mua phế liệu sắt thép đã không còn sử dụng hãy điện thoại ngay
+            cho chúng tôi bạn sẽ được mua với giá cao tại Bình Dương, Đồng Nai,
+            TP Hồ Chí Minh và các tỉnh lân cận.
+          </li>
+        </ul>
+        <p className="text-justify leading-relaxed">
+          Quý khách có nhu cầu thanh lý hàng phế liệu, hãy liên hệ với chúng tôi
+          để nhận được giá tốt nhất!
+        </p>
+      </div>
+      <div>
+        <h2 className="text-lg  font-bold mt-7 mb-3 capitalize">
+          Thông tin liên hệ
+        </h2>
+        <p className="text-justify leading-relaxed">
+          Địa chỉ: Thửa đất số 1046, tờ bản đồ số 171, khu phố Hòa Lân 2, Phường
+          Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam
+        </p>
+        <p className="text-justify leading-relaxed">Holine: 0989 015 053</p>
+        <p className="text-justify leading-relaxed">
+          Email: tailocvina.work@gmail.com
+        </p>
+      </div>
+      <div className="pb-7">
+        <h2 className="text-xl  font-bold mt-7 mb-3 capitalize">
+          Thông tin Giấy phép kinh doanh của công ty TNHH Tài Lộc Vi Na
+        </h2>
+        <p className="text-justify leading-relaxed">
+          Công ty TNHH Tài Lộc Vi Na tự hào là một trong những đơn vị uy tín tại
+          Việt Nam, chuyên cung cấp các dịch vụ thu mua phế liệu, vải vụn số
+          lượng lớn và xử lý rác thải công nghiệp. Để đảm bảo chất lượng dịch vụ
+          và tuân thủ pháp luật, công ty chúng tôi đã hoàn tất các thủ tục pháp
+          lý và sở hữu Giấy phép kinh doanh hợp pháp.
+        </p>
+        <br />
+        <p className="text-justify leading-relaxed">
+          Giấy phép kinh doanh của công ty TNHH Tài Lộc Vi Na được cấp bởi cơ
+          quan chức năng có thẩm quyền, với các thông tin chi tiết về ngành nghề
+          hoạt động, địa chỉ, số đăng ký kinh doanh và các giấy tờ pháp lý liên
+          quan. Đây là cơ sở để chúng tôi thực hiện các hoạt động thu mua phế
+          liệu và xử lý rác thải công nghiệp một cách chính thống và tuân thủ
+          các quy định của pháp luật.
+        </p>
+        <div className="flex flex-col items-center gap-y-2 md:gap-x-5 md:flex-row  md:justify-center mt-7">
+          <Image
+            src="/giay-phep-kinh-doanh-tai-loc-vi-na-1-edit.png"
+            alt="giay-phep-kinh-doanh-cong-ty-tai-loc-vi-na"
+            width={480} // Chiều rộng gốc của ảnh
+            height={640} // Chiều cao gốc của ảnh
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+
+          <Image
+            src="/giay-phep-kinh-doanh-tai-loc-vi-na-2-edit.png"
+            alt="giay-phep-kinh-doanh-cong-ty-tai-loc-vi-na"
+            width={480} // Chiều rộng gốc của ảnh
+            height={640} // Chiều cao gốc của ảnh
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
+        <br />
+        <p className="text-justify leading-relaxed">
+          Công ty TNHH Tài Lộc Vi Na luôn đặt mục tiêu bảo vệ môi trường lên
+          hàng đầu. Chúng tôi cam kết thực hiện các dịch vụ thu mua và xử lý phế
+          liệu, vải vụn, và rác thải công nghiệp không chỉ tuân thủ pháp luật mà
+          còn góp phần giảm thiểu ô nhiễm môi trường. Giấy phép kinh doanh của
+          công ty chứng minh rằng chúng tôi hoạt động trong khuôn khổ pháp lý,
+          đồng thời hỗ trợ cộng đồng trong việc bảo vệ sức khỏe và phát triển
+          bền vững.
+        </p>
+        <br />
+        <p className="text-justify leading-relaxed">
+          Giấy phép kinh doanh của công ty cũng thể hiện trách nhiệm xã hội của
+          chúng tôi trong việc cung cấp các giải pháp thu gom và xử lý phế liệu,
+          rác thải công nghiệp một cách hiệu quả và an toàn. Việc sở hữu giấy
+          phép này giúp công ty thực hiện nghĩa vụ thuế đầy đủ, đảm bảo quyền
+          lợi cho khách hàng và cộng đồng, đồng thời nâng cao sự tin tưởng từ
+          đối tác và khách hàng.
+        </p>
+      </div>
+    </div>
+  );
+};
+export default GioiThieu;

@@ -5,10 +5,13 @@ import { BsTelephoneInboundFill } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 import MenuHeader from "../header.menu/header.menu";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { MdOutlineMenu } from "react-icons/md";
 const Header = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false); // Header hiển thị mặc định
   const [lastScrollPos, setLastScrollPos] = useState(0); // Lưu vị trí cuộn cuối cùng
+  const [isMenu, setIsMenu] = useState<boolean>(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,8 +30,28 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollPos]);
+  useEffect(() => {
+    if (isMenu) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isMenu]);
+
+  const handleToggleMenu = (): void => {
+    setIsMenu(!isMenu);
+  };
+  const handleClickOutside = (event: MouseEvent): void => {
+    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      setIsMenu(false); // Đóng menu khi click bên ngoài
+    }
+  };
+
   return (
-    <>
+    <div>
       <header className="bg-slate-500">
         <div className="bg-colorPrimary">
           <div className="flex md:justify-between justify-center md:max-w-[1170px] mx-auto p-1 items-center px-3.5 w-full">
@@ -68,16 +91,23 @@ const Header = () => {
         </div>
         <div className="bg-white h-24 flex justify-center">
           <div className="flex md:max-w-[1170px]  items-center md:justify-between w-full  px-3.5">
-            <MenuHeader />
-            <div className="mx-auto md:mx-0">
-              <Image
-                src="/logo-horizontal.svg"
-                width={240}
-                height={0}
-                alt="Công Ty TNHH Tài Lộc Vi Na"
-                priority
+            <div className="md:hidden">
+              <MdOutlineMenu
+                className="mr-3 text-3xl text-black/80  cursor-pointer"
+                onClick={handleToggleMenu}
               />
             </div>
+
+            <Link href="/" className="mx-auto md:mx-0">
+              <Image
+                src="/logo-horizontal.svg"
+                priority
+                sizes=""
+                width={240}
+                height={240}
+                alt="Công Ty TNHH Tài Lộc Vi Na"
+              />
+            </Link>
             <div className="md:flex items-center gap-2 hidden">
               <div className="border-2 border-colorPrimary rounded-full p-2">
                 <BsTelephoneInboundFill className="text-xl text-colorPrimary" />
@@ -93,7 +123,7 @@ const Header = () => {
             <ul className="flex items-center py-2">
               <li>
                 <Link
-                  href="#"
+                  href="/"
                   className="uppercase text-textPrimary text-sm font-bold py-2 mr-2"
                 >
                   Trang chủ
@@ -101,7 +131,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/gioi-thieu"
                   className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2"
                 >
                   Giới thiệu
@@ -109,7 +139,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2"
                 >
                   Thu mua phế liệu giá cao
@@ -128,10 +158,15 @@ const Header = () => {
         </div>
       </header>
       {isVisible && (
-        <header className="fixed left-0 top-0 right-0 animate-slideDown z-50">
+        <header className="fixed left-0 top-0 right-0 animate-slideDown z-10">
           <div className="bg-white/90 h-20 flex justify-center">
             <div className="flex md:w-[1170px] items-center md:justify-between w-full px-4">
-              <MenuHeader />
+              <div className="md:hidden">
+                <MdOutlineMenu
+                  className="mr-3 text-3xl text-black/80  cursor-pointer"
+                  onClick={handleToggleMenu}
+                />
+              </div>
               <div className="mx-auto md:mx-0">
                 <Image
                   src="/logo-horizontal.svg"
@@ -145,7 +180,9 @@ const Header = () => {
                 <div className="border-2 border-colorPrimary rounded-full p-2">
                   <BsTelephoneInboundFill className="text-xl text-colorPrimary" />
                 </div>
-                <p className="text-lg text-black"><strong>0989 015 053</strong></p>
+                <p className="text-lg text-black">
+                  <strong>0989 015 053</strong>
+                </p>
               </div>
             </div>
           </div>
@@ -189,7 +226,10 @@ const Header = () => {
           </div>
         </header>
       )}
-    </>
+      {isMenu && (
+        <MenuHeader handleToggleMenu={handleToggleMenu} menuRef={menuRef} />
+      )}
+    </div>
   );
 };
 

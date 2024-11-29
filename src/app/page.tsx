@@ -1,24 +1,27 @@
 import Image from "next/image";
 import { FaPhoneAlt } from "react-icons/fa";
 import Question from "./components/home.question/home.question";
+import FeedBack from "./components/home.feedback/home.feedback";
 
 export default function Home() {
   return (
-    <div>
+    <div className="font-sans">
       {/* banner */}
       <div className="relative h-[500px] ">
         <Image
+          sizes=""
+          priority
           src="/banner.jpg"
           alt="phế liệu Tài Lộc Vi Na"
-          layout="fill"
-          objectFit="cover" // Tùy chỉnh nếu bạn muốn hình ảnh cắt xén hay thu nhỏ theo tỷ lệ
+          fill
+          className="object-cover" // Tùy chỉnh nếu bạn muốn hình ảnh cắt xén hay thu nhỏ theo tỷ lệ
         />
         <div className="bg-white/90 absolute text-center p-8 left-[5%] bottom-[5%] top-[5%] right-[5%] overflow-auto lg:right-[30%] max-w-full">
           <h1 className="uppercase  text-colorPrimary font-bold sm:text-2xl lg:text-4xl my-2.5">
             CÔNG TY TNHH TÀI LỘC VI NA
           </h1>
           <h2 className="text-colorPrimary sm:text-lg lg:text-2xl my-2.5">
-            Chuyên thu mua phế liệu
+            Chuyên thu mua vải vụn, phế liệu, xử lý rác công nghiệp
           </h2>
           <p className="text-xs sm:text-sm lg:text-base text-justify my-4 leading-relaxed">
             <strong className="font-bold">
@@ -35,10 +38,10 @@ export default function Home() {
             <FaPhoneAlt className="text-textPrimary text-base sm:text-xl" />
             <p className="uppercase text-textPrimary text-sm sm:text-xl leading-none">
               Gọi ngay{" "}
-              <a href="tel:0989015053" className="font-bold text-textPrimary">
-                0989 015 053
-              </a>
             </p>
+            <a href="tel:0989015053" className="font-bold text-textPrimary text-sm sm:text-xl leading-non">
+              0989 015 053
+            </a>
           </button>
         </div>
       </div>
@@ -46,6 +49,8 @@ export default function Home() {
         <div className="flex items-center gap-4 ">
           <div className="bg-colorPrimary p-3 rounded-full flex items-center justify-center">
             <Image
+              sizes=""
+              priority
               src="/garbage-truck.svg"
               alt="Thu mua tận nơi"
               width={50}
@@ -66,6 +71,8 @@ export default function Home() {
         <div className="flex items-center gap-4">
           <div className="bg-colorPrimary p-3 rounded-full flex items-center justify-center">
             <Image
+              sizes=""
+              priority
               src="/phone-call-call-svgrepo-com.svg"
               alt="cc"
               width={50}
@@ -85,6 +92,8 @@ export default function Home() {
         <div className="flex items-center gap-4">
           <div className="bg-colorPrimary p-3 rounded-full flex items-center justify-center">
             <Image
+              sizes=""
+              priority
               src="/pay.svg"
               alt="cc"
               width={50}
@@ -113,7 +122,7 @@ export default function Home() {
           <h3 className="uppercase text-colorPrimary font-bold text-sm mb-1">
             Về chúng tôi
           </h3>
-          <h2 className="uppercase text-colorPrimary font-bold text-3xl mb-3">
+          <h2 className="uppercase text-colorPrimary font-bold text-xl sm:text-2xl lg:text-3xl mb-3">
             CÔNG TY TNHH TÀI LỘC VI NA
           </h2>
           <p className="text-justify leading-relaxed">
@@ -143,6 +152,8 @@ export default function Home() {
         </div>
         <div className="sm:basis-1/2">
           <Image
+            sizes=""
+            priority
             src="/banner.jpg"
             alt="Thu Mua Phế Liệu Tài Lộc Vi Na"
             width={500}
@@ -159,16 +170,16 @@ export default function Home() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <p className="uppercase text-colorPrimary font-bold">4 lý do</p>
-          <h2 className="text-2xl sm:text-3xl font-bold uppercase text-colorPrimary">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold uppercase text-colorPrimary">
             BẠN NÊN CHỌN THU MUA PHẾ LIỆU GIÁ CAO TẬN NỢI TÀI LỘC VI NA
           </h2>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 gap-y-8 sm:gap-y-0">
           <div className="text-justify bg-[#bbf7d0] rounded-md p-4 relative">
-            <h4 className="uppercase text-colorPrimary font-bold text-xl sm:text-2xl mb-3 mt-4 text-center">
+            <h4 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center">
               BÁO GIÁ NHANH
             </h4>
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm sm:text-base leading-relaxed">
               Khi nhận thông tin từ khách hàng gọi đến, chúng tôi là đơn vị trực
               tiếp mua nên không qua bất kì công ty trung gian nào, nên chúng
               tôi sẽ báo giá thu mua phế liệu nhanh nhất với giá gốc từ{" "}
@@ -180,10 +191,10 @@ export default function Home() {
             </div>
           </div>
           <div className="text-justify bg-[#bbf7d0] rounded-md p-4 relative">
-            <h4 className="uppercase text-colorPrimary font-bold text-xl sm:text-2xl mb-3 mt-4 text-center">
+            <h4 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center">
               THU MUA TRONG NGÀY
             </h4>
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm sm:text-base leading-relaxed">
               Sau khi anh chị có ý định bán phế liệu, chúng tôi sẽ cử người và
               phương tiện tới thu mua ngay mà không cần để khách chờ đợi. Uy tín
               là phương ngôn để tồn tại tới ngày hôm nay. Nên chúng tôi sẽ làm
@@ -194,10 +205,10 @@ export default function Home() {
             </div>
           </div>
           <div className="text-justify bg-[#bbf7d0] rounded-md p-4 relative">
-            <h4 className="uppercase text-colorPrimary font-bold text-xl sm:text-2xl mb-3 mt-4 text-center ">
+            <h4 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center ">
               THANH TOÁN LIỀN TAY
             </h4>
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm sm:text-base leading-relaxed">
               Thanh toán tiền nhanh chóng sau khi mua hàng xong, quý khách yêu
               cầu tiền mặt hay chuyển khoán thì chúng tôi sẽ chuyển theo yêu
               cầu. Sau khi được nhân viên tư vấn và trao đổi thông tin mua bán
@@ -209,10 +220,10 @@ export default function Home() {
             </div>
           </div>
           <div className="text-justify bg-[#bbf7d0] rounded-md p-4 relative">
-            <h4 className="uppercase text-colorPrimary font-bold text-xl sm:text-2xl mb-3 mt-4 text-center">
+            <h4 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center">
               CÂN ĐO UY TÍN
             </h4>
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm sm:text-base leading-relaxed">
               Quy trình thu mua, Chúng tôi luôn tuân thủ theo quy định của khách
               hàng, mọi thứ được làm theo chỉ đạo của khách để làm yên tâm nhất.
               mọi quá trình cân đo sẽ diễn ra trước mặt khách hàng, đảm bảo
@@ -231,11 +242,11 @@ export default function Home() {
       </div>
       {/*  */}
       <div className="container mx-auto px-4">
-        <h2 className="text-colorPrimary font-bold text-2xl text-center">
+        <h2 className="text-colorPrimary font-bold text-xl sm:text-2xl lg:text-3xl text-center">
           LÝ DO KHÁCH HÀNG CHỌN CÔNG TY PHẾ LIỆU TÀI LỘC VI NA
         </h2>
         <div className="mt-7 bg-[#bbf7d0] p-3 rounded-md">
-          <p className="text-justify leading-relaxed">
+          <p className="text-sm sm:text-base text-justify leading-relaxed">
             Với chỉ một cuộc gọi,
             <strong> Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na</strong> sẽ nhanh
             chóng gửi báo giá ngay, đạt được thỏa thuận mua bán phế liệu, chúng
@@ -251,7 +262,7 @@ export default function Home() {
           <p className="text-xl text-center my-3">
             <span className="text-[#00aae7]">GỌI NGAY TƯ VẤN VỚI HOTLINE</span>:
             <span className="text-red-600">
-              <strong> 0975 117 626</strong>
+              <strong> 0989 015 053</strong>
             </span>
           </p>
         </div>
@@ -261,39 +272,54 @@ export default function Home() {
         <hr className="border-b-colorPrimary border-b-[1px] " />
       </div>
       {/*  */}
-      <div className="container mx-auto px-4">
-        <h2 className="text-colorPrimary font-bold text-2xl text-center mb-7">
-          HỖ TRỢ XỬ LÝ RÁC THẢI CÔNG NGHIỆP
-        </h2>
-        <p className="text-justify leading-relaxed">
-          <strong>Công ty TNHH Tài Lộc Vi Na</strong> tự hào là đối tác tin cậy
-          trong việc xử lý rác thải công nghiệp. Với đội ngũ chuyên gia giàu
-          kinh nghiệm và quy trình xử lý hiện đại, chúng tôi cam kết cung cấp
-          các giải pháp tối ưu giúp doanh nghiệp giảm thiểu tác động tiêu cực
-          đến môi trường. Chúng tôi hỗ trợ thu gom và tái chế các loại rác thải
-          công nghiệp như kim loại, nhựa, vải vụn, các vật liệu độc hại, giúp
-          doanh nghiệp không chỉ tiết kiệm chi phí mà còn góp phần bảo vệ môi
-          trường. Với dịch vụ thu gom tận nơi, nhanh chóng và an toàn, chúng tôi
-          cam kết mang lại sự hài lòng tối đa cho khách hàng. Đừng để rác thải
-          công nghiệp là gánh nặng cho doanh nghiệp của bạn. Hãy để
-          <strong> Tài Lộc Vi Na</strong> giúp bạn xử lý rác thải một cách hiệu
-          quả và thân thiện với môi trường.
-        </p>
-        <br />
-        <p className="text-justify leading-relaxed">
-          <strong>
-            Cty thu mua phế liệu tại Bình Dương, TPHCM Tài Lộc Vi Na{" "}
-          </strong>
-          mua trong vòng 1h tại Bình Dương, TPHCM và các tỉnh lân cận. Chỉ cần
-          khách liên lạc, dịch vụ thu mua phế liệu tận nơi của{" "}
-          <strong>Phế Liệu Tài Lộc Vi Na</strong> cam kết sẽ nhanh chóng làm vừa
-          lòng quý khách với giá cả đi kèm chất lượng – hoa hồng cạnh tranh.
-        </p>
-        <br />
-        <p className="text-justify leading-relaxed">
-          <strong>Công ty phế liệu Tài Lộc Vi Na</strong> là đối tác lớn thu mua
-          phế liệu khu công nghiệp tại địa bàn Bình Dương, TPHCM và toàn quốc
-        </p>
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="md:col-span-2">
+          <h2 className="text-colorPrimary font-bold text-2xl text-center mb-7">
+            THU GÔM & XỬ LÝ RÁC THẢI CÔNG NGHIỆP
+          </h2>
+          <p className="text-justify leading-relaxed">
+            <strong>Công ty TNHH Tài Lộc Vi Na</strong> tự hào là đối tác tin
+            cậy trong việc xử lý rác thải công nghiệp. Với đội ngũ chuyên gia
+            giàu kinh nghiệm và quy trình xử lý hiện đại, chúng tôi cam kết cung
+            cấp các giải pháp tối ưu giúp doanh nghiệp giảm thiểu tác động tiêu
+            cực đến môi trường. Chúng tôi hỗ trợ thu gom và tái chế các loại rác
+            thải công nghiệp như kim loại, nhựa, vải vụn, các vật liệu độc hại,
+            giúp doanh nghiệp không chỉ tiết kiệm chi phí mà còn góp phần bảo vệ
+            môi trường. Với dịch vụ thu gom tận nơi, nhanh chóng và an toàn,
+            chúng tôi cam kết mang lại sự hài lòng tối đa cho khách hàng. Đừng
+            để rác thải công nghiệp là gánh nặng cho doanh nghiệp của bạn. Hãy
+            để
+            <strong> Tài Lộc Vi Na</strong> giúp bạn xử lý rác thải một cách
+            hiệu quả và thân thiện với môi trường.
+          </p>
+          <br />
+          <p className="text-justify leading-relaxed">
+            <strong>
+              Cty thu mua phế liệu tại Bình Dương, TPHCM Tài Lộc Vi Na{" "}
+            </strong>
+            mua trong vòng 1h tại Bình Dương, TPHCM và các tỉnh lân cận. Chỉ cần
+            khách liên lạc, dịch vụ thu mua phế liệu tận nơi của{" "}
+            <strong>Phế Liệu Tài Lộc Vi Na</strong> cam kết sẽ nhanh chóng làm
+            vừa lòng quý khách với giá cả đi kèm chất lượng – hoa hồng cạnh
+            tranh.
+          </p>
+          <br />
+          <p className="text-justify leading-relaxed">
+            <strong>Công ty phế liệu Tài Lộc Vi Na</strong> là đối tác lớn thu
+            mua phế liệu khu công nghiệp tại địa bàn Bình Dương, TPHCM và toàn
+            quốc.
+          </p>
+        </div>
+        <div className="relative h-80 md:h-auto">
+          <Image
+            sizes=""
+            priority
+            src="/Thu-gom-xu-ly-chat-thai-nguy-hai-scaled.jpg"
+            alt={""}
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
       {/* hr */}
       <div className="container mx-auto my-7 px-4">
@@ -308,11 +334,39 @@ export default function Home() {
           <div>
             <div className="w-full h-[200px] relative ">
               <Image
+                src="/phe-lieu-vai-vun.jpg"
+                alt="Thu mua vãi vụn, vãi tồn giá cao"
+                fill
+                sizes=""
+                priority
+                className="object-cover rounded-sm"
+              />
+            </div>
+            <div className="mt-4">
+              <h3 className="text-lg sm:text-xl text-colorPrimary text-center font-bold my-1">
+                Thu mua Vải Vụn, Vãi Tồn
+              </h3>
+              <p className="text-sm sm:text-base text-justify">
+                Thu mua vải vụn, vải tồn kho, vải kaki, thun, mua vải cây, vải
+                khúc, vải xéo, vải rẻo, coton loại 1, loại 2 và tất cả các loại
+                vải khác dù ít hay nhiều. Với nhiều năm kinh nghiệm trên thị
+                trường vải, <strong>Tài Lộc Vi Na</strong> thu mua tất cả các
+                loại vải với giá cao, tận nơi, uy tín, nhanh chóng tại các công
+                ty, nhà may, xí nghiệp may mặc, nhà xưởng, cơ sở, khu công
+                nghiệp sản xuất về áo quần, chăn mền, cặp xách,… Chúng tôi cam
+                kết không ép giá khách hàng.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="w-full h-[200px] relative ">
+              <Image
                 src="/phe-lieu-dong.jpg"
                 alt="Thu mua phế liệu đồng giá cao"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-sm"
+                fill
+                sizes=""
+                priority
+                className="object-cover rounded-sm"
               />
             </div>
             <div className="mt-4">
@@ -340,9 +394,10 @@ export default function Home() {
               <Image
                 src="/phe-lieu-nhom.jpg"
                 alt="Thu mua phế liệu nhôm giá cao"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-sm"
+                fill
+                sizes=""
+                priority
+                className="object-cover rounded-sm"
               />
             </div>
             <div className="mt-4">
@@ -367,9 +422,10 @@ export default function Home() {
               <Image
                 src="/phe-lieu-inox.jpg"
                 alt="Thu mua phế liệu inox giá cao"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-sm"
+                fill
+                sizes=""
+                priority
+                className="object-cover rounded-sm"
               />
             </div>
             <div className="mt-4">
@@ -392,9 +448,10 @@ export default function Home() {
               <Image
                 src="/phe-lieu-sat.jpg"
                 alt="Thu mua phế liệu sắt thép giá cao"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-sm"
+                fill
+                sizes=""
+                priority
+                className="object-cover rounded-sm"
               />
             </div>
             <div className="mt-4">
@@ -426,9 +483,10 @@ export default function Home() {
               <Image
                 src="/phe-lieu-chi.jpg"
                 alt="Thu mua phế liệu chì giá cao"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-sm"
+                fill
+                sizes=""
+                priority
+                className="object-cover rounded-sm"
               />
             </div>
             <div className="mt-4">
@@ -453,40 +511,16 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div>
-            <div className="w-full h-[200px] relative ">
-              <Image
-                src="/phe-lieu-vai-vun.jpg"
-                alt="Thu mua vãi vụn, vãi tồn giá cao"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-sm"
-              />
-            </div>
-            <div className="mt-4">
-              <h3 className="text-lg sm:text-xl text-colorPrimary text-center font-bold my-1">
-                Thu mua Vải Vụn, Vãi Tồn
-              </h3>
-              <p className="text-sm sm:text-base text-justify">
-                Thu mua vải vụn, vải tồn kho, vải kaki, thun, mua vải cây, vải
-                khúc, vải xéo, vải rẻo, coton loại 1, loại 2 và tất cả các loại
-                vải khác dù ít hay nhiều. Với nhiều năm kinh nghiệm trên thị
-                trường vải, <strong>Tài Lộc Vi Na</strong> thu mua tất cả các
-                loại vải với giá cao, tận nơi, uy tín, nhanh chóng tại các công
-                ty, nhà may, xí nghiệp may mặc, nhà xưởng, cơ sở, khu công
-                nghiệp sản xuất về áo quần, chăn mền, cặp xách,… Chúng tôi cam
-                kết không ép giá khách hàng.
-              </p>
-            </div>
-          </div>
+
           <div>
             <div className="w-full h-[200px] relative ">
               <Image
                 src="/phe-lieu-linh-kien-dien-tu.jpg"
                 alt="Thu mua linh kiện điện tử giá cao"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-sm"
+                fill
+                sizes=""
+                priority
+                className="object-cover rounded-sm"
               />
             </div>
             <div className="mt-4">
@@ -510,9 +544,10 @@ export default function Home() {
               <Image
                 src="/phe-lieu-hop-kim.jpg"
                 alt="Thu mua phế liệu hợp kim giá cao"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-sm"
+                fill
+                sizes=""
+                priority
+                className="object-cover rounded-sm"
               />
             </div>
             <div className="mt-4">
@@ -536,9 +571,10 @@ export default function Home() {
               <Image
                 src="/phe-lieu-niken.jpg"
                 alt="Thu mua phế liệu niken giá cao"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-sm"
+                fill
+                sizes=""
+                priority
+                className="object-cover rounded-sm"
               />
             </div>
             <div className="mt-4">
@@ -631,6 +667,11 @@ export default function Home() {
           </p>
         </div>
       </div>
+      {/* hr */}
+      <div className="container mx-auto my-7 px-4">
+        <hr className="border-b-colorPrimary border-b-[1px] " />
+      </div>
+      <FeedBack />
       {/* hr */}
       <div className="container mx-auto my-7 px-4">
         <hr className="border-b-colorPrimary border-b-[1px] " />
