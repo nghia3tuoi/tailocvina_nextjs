@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: 'https://tailocvina.vercel.app/',
+    siteUrl: 'https://www.phelieutailocvina.com/',
     generateRobotsTxt: true, // Tạo tệp robots.txt
     sitemapSize: 7000,
   };
