@@ -57,21 +57,23 @@ const Header = () => {
           <div className="flex md:justify-between justify-center md:container mx-auto py-1 items-center px-4 w-full">
             {/* tablet */}
             <div>
-              <p className="text-xs text-textPrimary uppercase font-bold hidden md:block">
-                CHÀO QUÝ KHÁCH ĐẾN VỚI THU MUA PHẾ LIỆU TÀI LỘC VI NA
+              <p className="text-xs text-textPrimary font-bold hidden md:block uppercase">
+                chào mừng quý khách đến với{" "}
+                <strong>công ty phế liệu tài lộc vi na</strong>
               </p>
             </div>
             <div className="md:flex gap-2 hidden">
               <div className="flex items-center gap-1 border-indigo-500">
                 <FaLocationDot className="text-textPrimary/70 text-sm" />
-                <p className="text-textPrimary/70 text-sm uppercase">
-                  Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương
+                <p className="text-textPrimary/70 text-xs uppercase">
+                  khu phố Hòa Lân 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh
+                  Bình Dương
                 </p>
               </div>
               <div className="border-r-[1px] border-textPrimary/20"></div>
               <div className="flex items-center gap-1">
-                <FaPhoneAlt className="text-textPrimary/70 text-base" />
-                <p className="text-textPrimary/70 text-base uppercase">
+                <FaPhoneAlt className="text-textPrimary/70 text-xs" />
+                <p className="text-textPrimary/70 text-xs uppercase">
                   <strong>0989 015 053</strong>
                 </p>
               </div>
@@ -101,10 +103,10 @@ const Header = () => {
               <Image
                 src="/logo-horizontal.svg"
                 priority
-                sizes=""
-                width={240}
-                height={240}
-                alt="Công Ty TNHH Tài Lộc Vi Na"
+                width={0}
+                height={0}
+                alt="công ty thu mua phế liệu tài lộc vi na"
+                className="w-60 h-auto"
               />
             </Link>
             <div className="md:flex items-center gap-2 hidden">
@@ -123,7 +125,7 @@ const Header = () => {
               <li>
                 <Link
                   href="/"
-                  className="uppercase text-textPrimary text-sm font-bold py-2 mr-2 hover:text-textColorTitle"
+                  className="uppercase block text-textPrimary text-sm font-bold py-2 mr-2 hover:text-textColorTitle"
                 >
                   Trang chủ
                 </Link>
@@ -131,17 +133,17 @@ const Header = () => {
               <li>
                 <Link
                   href="/gioi-thieu"
-                  className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2 hover:text-textColorTitle"
+                  className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2 hover:text-textColorTitle block"
                 >
                   Giới thiệu
                 </Link>
               </li>
               <li className="relative group">
-                <div className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2 hover:text-textColorTitle cursor-pointer">
+                <div className="uppercase text-textPrimary text-sm font-bold py-2 mx-2 hover:text-textColorTitle cursor-pointer">
                   Thu mua phế liệu giá cao
                 </div>
                 {/* dropdown */}
-                <ul className="z-10 hidden group-hover:block bg-colorPrimary top-[125%] absolute divide-y divide-white/20 rounded-sm w-60">
+                <ul className=" z-10 hidden group-hover:block bg-colorPrimary top-[125%] absolute divide-y divide-white/20 rounded-sm w-60">
                   <li>
                     <Link
                       href="/thu-mua-vai-vun-gia-cao"
@@ -153,17 +155,18 @@ const Header = () => {
                   <li>
                     <Link
                       href="/thu-gom-xu-ly-rac-thai-gia-re"
-                      className=" hover:text-textColorTitle text-sm px-2 py-4 font-bold text-white block capitalize"
+                      className=" hover:text-textColorTitle text-sm px-2 py-4 font-bold text-white  capitalize block"
                     >
                       Thu Gôm Xử Lí Rác Thải Giá rẻ
                     </Link>
                   </li>
                 </ul>
+                <div className="absolute h-4 w-full z-10 "></div>
               </li>
               <li>
                 <Link
                   href="/lien-he"
-                  className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2 hover:text-textColorTitle"
+                  className="block uppercase text-textPrimary text-sm  font-bold py-2 mx-2 hover:text-textColorTitle"
                 >
                   Liên hệ
                 </Link>
@@ -183,13 +186,14 @@ const Header = () => {
                 />
               </div>
               <div className="mx-auto md:mx-0">
-                <Image
-                  src="/logo-horizontal.svg"
-                  width={240}
-                  height={0}
-                  alt="Công Ty TNHH Tài Lộc Vi Na"
-                  priority
-                />
+              <Image
+                src="/logo-horizontal.svg"
+                priority
+                width={0}
+                height={0}
+                alt="công ty thu mua phế liệu tài lộc vi na"
+                className="w-60 h-auto"
+              />
               </div>
               <div className="md:flex items-center gap-2 hidden">
                 <div className="border-2 border-colorPrimary rounded-full p-2">
@@ -207,7 +211,7 @@ const Header = () => {
                 <li>
                   <Link
                     href="#"
-                    className="uppercase text-textPrimary text-sm font-bold py-2 mr-2"
+                    className="uppercase text-textPrimary text-sm font-bold py-2 mr-2 block"
                   >
                     Trang chủ
                   </Link>
@@ -215,7 +219,7 @@ const Header = () => {
                 <li>
                   <Link
                     href="#"
-                    className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2"
+                    className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2 block"
                   >
                     Giới thiệu
                   </Link>
@@ -243,11 +247,12 @@ const Header = () => {
                       </Link>
                     </li>
                   </ul>
+                  <div className="absolute h-4 w-full z-10 "></div>
                 </li>
                 <li>
                   <Link
                     href="#"
-                    className="uppercase text-textPrimary text-sm  font-bold py-2 mx-2"
+                    className="block uppercase text-textPrimary text-sm  font-bold py-2 mx-2"
                   >
                     Liên hệ
                   </Link>

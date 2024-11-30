@@ -7,7 +7,7 @@ import PhoneDynamic from "./components/phone-dynamic/phone-dynamic";
 import ZaloDynamic from "./components/zalo-dynamic/zalo-dynamic";
 
 export const metadata: Metadata = {
-  title: "Thu Mua Phế Liệu Tài Lộc Vi Na",
+  title: "Công Ty Phế Liệu Tài Lộc Vi Na",
   description:
     "Công Ty TNHH Tài Lộc Vi Na chuyên thu mua phế liệu, vãi vụn giá cao, thu gôm và xử lý rác thải công nghiệp giá rẻ với mức giá cạnh tranh nhất trên thị trường.",
   keywords:
@@ -22,17 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
-          name="google-site-verification"
-          content="wApy2iW--kPY4Mz-hFvlu0A62Q5H4vy6L1qoKuairlQ"
-        />
+        {/* Đảm bảo charset là UTF-8 */}
       </head>
       <body>
         <Header />
         {children}
         <PhoneDynamic />
         <ZaloDynamic />
-
         <Footer />
       </body>
     </html>

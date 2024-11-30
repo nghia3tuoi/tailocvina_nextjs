@@ -2,10 +2,11 @@ import Image from "next/image";
 import { FaPhoneAlt } from "react-icons/fa";
 import Question from "./components/home.question/home.question";
 import FeedBack from "./components/home.feedback/home.feedback";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans">
+    <div>
       {/* banner */}
       <div className="relative h-[500px] ">
         <Image
@@ -17,11 +18,12 @@ export default function Home() {
           className="object-cover" // Tùy chỉnh nếu bạn muốn hình ảnh cắt xén hay thu nhỏ theo tỷ lệ
         />
         <div className="bg-white/90 absolute text-center p-8 left-[5%] bottom-[5%] top-[5%] right-[5%] overflow-auto lg:right-[30%] max-w-full">
-          <h1 className="uppercase  text-colorPrimary font-bold sm:text-2xl lg:text-4xl my-2.5">
-            CÔNG TY TNHH TÀI LỘC VI NA
+          <h1 className="uppercase  text-colorPrimary font-bold text-xl md:text-2xl lg:text-4xl my-2.5">
+            công ty thu mua phế liệu tài lộc vi na
           </h1>
-          <h2 className="text-colorPrimary sm:text-lg lg:text-2xl my-2.5">
-            Chuyên thu mua vải vụn, phế liệu, xử lý rác công nghiệp
+          <h2 className="text-colorPrimary md:text-xl lg:text-2xl my-2.5">
+            Chuyên thu mua vải vụn, phế liệu, thu gôm và xử lý rác công nghiệp
+            giá tốt nhất thị trường
           </h2>
           <p className="text-xs sm:text-sm lg:text-base text-justify my-4 leading-relaxed">
             <strong className="font-bold">
@@ -34,15 +36,15 @@ export default function Home() {
             lòng liên hệ theo số: <strong> 0989 015 053 </strong> chúng tôi luôn
             nhanh chóng phục vụ 24/24.
           </p>
-          <button className="mx-auto flex justify-center items-center bg-colorPrimary p-2 rounded-md gap-2 hover:bg-[#15803d] my-2.5">
-            <FaPhoneAlt className="text-textPrimary text-base sm:text-xl" />
-            <p className="uppercase text-textPrimary text-sm sm:text-xl leading-none">
-              Gọi ngay{" "}
-            </p>
-            <a href="tel:0989015053" className="font-bold text-textPrimary text-sm sm:text-xl leading-non">
-              0989 015 053
-            </a>
-          </button>
+          <Link
+            href="tel:0989015053"
+            className=" gap-2 text-textPrimary sm:text-xl bg-colorPrimary p-2 rounded-md flex justify-center items-center mx-auto max-w-[300px] hover:opacity-90"
+            aria-label="liên hệ phế liệu tài lộc vi na qua số điện thoại"
+          >
+            <FaPhoneAlt className="text-textPrimary  sm:text-xl" />
+            <p className="uppercase text-textPrimary sm:text-xl ">Gọi ngay</p>
+            0989 015 053
+          </Link>
         </div>
       </div>
       <div className="flex flex-col md:flex-row px-4 pt-7 gap-2.5 container mx-auto">
@@ -62,7 +64,7 @@ export default function Home() {
             <h3 className="text-lg font-bold text-colorPrimary">
               Thu mua tận nơi
             </h3>
-            <p className="text-base">
+            <p className="text-justify leading-relaxed">
               Có đội xe tự bốc xếp, vận chuyển. Vệ sinh sạch sẽ nơi thu gom phế
               liệu.
             </p>
@@ -84,7 +86,7 @@ export default function Home() {
             <h3 className="text-lg font-bold text-colorPrimary">
               Thu mua 24/24
             </h3>
-            <p className="text-base">
+            <p className="text-justify leading-relaxed">
               Nhận mua tất cả các ngày trong tuần, kể cả ngày nghỉ lễ Tết.
             </p>
           </div>
@@ -105,7 +107,7 @@ export default function Home() {
             <h3 className="text-lg font-bold text-colorPrimary">
               Thanh toán một lần
             </h3>
-            <p className="text-base">
+            <p className="text-justify leading-relaxed">
               Thanh toán tiền mặt hoặc chuyển khoản ngay khi các phế liệu được
               chất lên xe.
             </p>
@@ -123,24 +125,32 @@ export default function Home() {
             Về chúng tôi
           </h3>
           <h2 className="uppercase text-colorPrimary font-bold text-xl sm:text-2xl lg:text-3xl mb-3">
-            CÔNG TY TNHH TÀI LỘC VI NA
+            công ty thu mua phế liệu tài lộc vi na
           </h2>
           <p className="text-justify leading-relaxed">
-            <strong> Tài Lộc Vi Na</strong> chuyên thu mua phế liệu giá cao, vãi
-            vụn, hàng tồn kho... Chúng tôi là địa điểm, thanh lý, thu mua, là
-            nơi mua bán các loại phế liệu từ bán sỉ & lẻ, số lượng ít, hay nhiều
-            chúng tôi đều tới tận nơi thu mua với giá cả giá cao nhất trên thị
-            trường hiện nay.
+            <strong className="font-normal capitalize">
+              phế liệu tài lộc vi Na
+            </strong>{" "}
+            chuyên thu mua phế liệu giá cao, vãi vụn, hàng tồn kho... Chúng tôi
+            là địa điểm, thanh lý, thu mua, là nơi mua bán các loại phế liệu từ
+            bán sỉ & lẻ, số lượng ít, hay nhiều chúng tôi đều tới tận nơi thu
+            mua với giá cả giá cao nhất trên thị trường hiện nay.
             <br />
             <br />
             <span>
-              <strong>Tài Lộc Vi Na</strong> thu mua với giá cao, thu mua tận
-              nơi và có chiết khấu hoa hồng cao cho người giới thiệu. Tài Lộc Vi
-              Na chuyên thu mua tất cả phế liệu trên thị trường hiện nay. Nổi
-              bật như thu mua vải tồn, hàng thanh lý, hàng tồn kho… Với hơn 10
-              năm kinh nghiệm trong lĩnh vực phế liệu. Chúng tôi cam kết mang
-              đến cho quý khách một dịch vụ tốt nhất. Chúng tôi còn Hỗ trợ xử lý
-              rác thải công nghiệp.
+              <strong className="font-normal capitalize">
+                phế liệu tài lộc vi Na{" "}
+              </strong>
+              thu mua với giá cao, thu mua tận nơi và có chiết khấu hoa hồng cao
+              cho người giới thiệu.{" "}
+              <strong className="font-normal capitalize">
+                Phế Liệu Tài Lộc Vi Na{" "}
+              </strong>
+              chuyên thu mua tất cả phế liệu trên thị trường hiện nay. Nổi bật
+              như thu mua vải tồn, hàng thanh lý, hàng tồn kho… Với hơn 10 năm
+              kinh nghiệm trong lĩnh vực phế liệu. Chúng tôi cam kết mang đến
+              cho quý khách một dịch vụ tốt nhất. Chúng tôi còn Hỗ trợ xử lý rác
+              thải công nghiệp.
             </span>
             <br />
             <br />
@@ -171,14 +181,14 @@ export default function Home() {
         <div className="text-center mb-16">
           <p className="uppercase text-colorPrimary font-bold">4 lý do</p>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold uppercase text-colorPrimary">
-            BẠN NÊN CHỌN THU MUA PHẾ LIỆU GIÁ CAO TẬN NỢI TÀI LỘC VI NA
+            bạn nên chọn thu mua phế liệu tài lộc vi na
           </h2>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 gap-y-8 sm:gap-y-0">
           <div className="text-justify bg-[#bbf7d0] rounded-md p-4 relative">
-            <h4 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center">
+            <h3 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center">
               BÁO GIÁ NHANH
-            </h4>
+            </h3>
             <p className="text-sm sm:text-base leading-relaxed">
               Khi nhận thông tin từ khách hàng gọi đến, chúng tôi là đơn vị trực
               tiếp mua nên không qua bất kì công ty trung gian nào, nên chúng
@@ -191,9 +201,9 @@ export default function Home() {
             </div>
           </div>
           <div className="text-justify bg-[#bbf7d0] rounded-md p-4 relative">
-            <h4 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center">
+            <h3 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center">
               THU MUA TRONG NGÀY
-            </h4>
+            </h3>
             <p className="text-sm sm:text-base leading-relaxed">
               Sau khi anh chị có ý định bán phế liệu, chúng tôi sẽ cử người và
               phương tiện tới thu mua ngay mà không cần để khách chờ đợi. Uy tín
@@ -205,9 +215,9 @@ export default function Home() {
             </div>
           </div>
           <div className="text-justify bg-[#bbf7d0] rounded-md p-4 relative">
-            <h4 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center ">
+            <h3 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center ">
               THANH TOÁN LIỀN TAY
-            </h4>
+            </h3>
             <p className="text-sm sm:text-base leading-relaxed">
               Thanh toán tiền nhanh chóng sau khi mua hàng xong, quý khách yêu
               cầu tiền mặt hay chuyển khoán thì chúng tôi sẽ chuyển theo yêu
@@ -220,9 +230,9 @@ export default function Home() {
             </div>
           </div>
           <div className="text-justify bg-[#bbf7d0] rounded-md p-4 relative">
-            <h4 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center">
+            <h3 className="uppercase text-colorPrimary font-bold text-lg sm:text-2xl mb-3 mt-4 text-center">
               CÂN ĐO UY TÍN
-            </h4>
+            </h3>
             <p className="text-sm sm:text-base leading-relaxed">
               Quy trình thu mua, Chúng tôi luôn tuân thủ theo quy định của khách
               hàng, mọi thứ được làm theo chỉ đạo của khách để làm yên tâm nhất.
@@ -242,11 +252,11 @@ export default function Home() {
       </div>
       {/*  */}
       <div className="container mx-auto px-4">
-        <h2 className="text-colorPrimary font-bold text-xl sm:text-2xl lg:text-3xl text-center">
-          LÝ DO KHÁCH HÀNG CHỌN CÔNG TY PHẾ LIỆU TÀI LỘC VI NA
+        <h2 className="text-colorPrimary font-bold text-xl sm:text-2xl lg:text-3xl text-center uppercase">
+          lý do khách hàng chọn công ty phế liệu tài lộc vi na
         </h2>
         <div className="mt-7 bg-[#bbf7d0] p-3 rounded-md">
-          <p className="text-sm sm:text-base text-justify leading-relaxed">
+          <p className="text-base text-justify leading-relaxed">
             Với chỉ một cuộc gọi,
             <strong> Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na</strong> sẽ nhanh
             chóng gửi báo giá ngay, đạt được thỏa thuận mua bán phế liệu, chúng
@@ -254,8 +264,10 @@ export default function Home() {
             theo yêu cầu. Đã hơn 10 năm trong lĩnh vực thu mua phế liệu tổng hợp
             tận nơi. Có nguồn vốn lớn mạnh, xuất hàng trực tiếp không qua trung
             gian, có mối quan hệ lớn trong ngành nên{" "}
-            <strong>Tài Lộc Vi Na</strong> đảm bảo giá cả cao hơn thị trường.{" "}
-            <strong>Vựa thu mua phế liệu</strong> của chúng tôi là website
+            <strong className="font-normal">Phế Liệu Tài Lộc Vi Na</strong> đảm
+            bảo giá cả cao hơn thị trường.{" "}
+            <strong className="font-normal">Vựa thu mua phế liệu</strong> của
+            chúng tôi là website
             <strong> thu mua phế liệu uy tín</strong>, sẽ là đối tác tin cậy của
             quý khách hàng.
           </p>
@@ -274,40 +286,40 @@ export default function Home() {
       {/*  */}
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="md:col-span-2">
-          <h2 className="text-colorPrimary font-bold text-2xl text-center mb-7">
-            THU GÔM & XỬ LÝ RÁC THẢI CÔNG NGHIỆP
+          <h2 className="text-colorPrimary font-bold text-2xl text-center mb-7 uppercase">
+            Thu Gôm Và Xử Lí Rác Thải Công Nghiệp Giá Rẻ
           </h2>
           <p className="text-justify leading-relaxed">
-            <strong>Công ty TNHH Tài Lộc Vi Na</strong> tự hào là đối tác tin
-            cậy trong việc xử lý rác thải công nghiệp. Với đội ngũ chuyên gia
-            giàu kinh nghiệm và quy trình xử lý hiện đại, chúng tôi cam kết cung
-            cấp các giải pháp tối ưu giúp doanh nghiệp giảm thiểu tác động tiêu
-            cực đến môi trường. Chúng tôi hỗ trợ thu gom và tái chế các loại rác
-            thải công nghiệp như kim loại, nhựa, vải vụn, các vật liệu độc hại,
-            giúp doanh nghiệp không chỉ tiết kiệm chi phí mà còn góp phần bảo vệ
-            môi trường. Với dịch vụ thu gom tận nơi, nhanh chóng và an toàn,
-            chúng tôi cam kết mang lại sự hài lòng tối đa cho khách hàng. Đừng
-            để rác thải công nghiệp là gánh nặng cho doanh nghiệp của bạn. Hãy
-            để
-            <strong> Tài Lộc Vi Na</strong> giúp bạn xử lý rác thải một cách
-            hiệu quả và thân thiện với môi trường.
+            <strong>Công ty Thu Mua Phế Liệu Tài Lộc Vi Na</strong> tự hào là
+            đối tác tin cậy trong việc xử lý rác thải công nghiệp. Với đội ngũ
+            chuyên gia giàu kinh nghiệm và quy trình xử lý hiện đại, chúng tôi
+            cam kết cung cấp các giải pháp tối ưu giúp doanh nghiệp giảm thiểu
+            tác động tiêu cực đến môi trường. Chúng tôi hỗ trợ thu gom và tái
+            chế các loại rác thải công nghiệp như kim loại, nhựa, vải vụn, các
+            vật liệu độc hại, giúp doanh nghiệp không chỉ tiết kiệm chi phí mà
+            còn góp phần bảo vệ môi trường. Với dịch vụ thu gom tận nơi, nhanh
+            chóng và an toàn, chúng tôi cam kết mang lại sự hài lòng tối đa cho
+            khách hàng. Đừng để rác thải công nghiệp là gánh nặng cho doanh
+            nghiệp của bạn. Hãy để{" "}
+            <strong className="font-normal">
+              Công Ty Phế Liệu Tài Lộc Vi Na
+            </strong>{" "}
+            giúp bạn xử lý rác thải một cách hiệu quả và thân thiện với môi
+            trường.
           </p>
           <br />
           <p className="text-justify leading-relaxed">
-            <strong>
-              Cty thu mua phế liệu tại Bình Dương, TPHCM Tài Lộc Vi Na{" "}
-            </strong>
+            <strong>Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na </strong>
             mua trong vòng 1h tại Bình Dương, TPHCM và các tỉnh lân cận. Chỉ cần
             khách liên lạc, dịch vụ thu mua phế liệu tận nơi của{" "}
-            <strong>Phế Liệu Tài Lộc Vi Na</strong> cam kết sẽ nhanh chóng làm
-            vừa lòng quý khách với giá cả đi kèm chất lượng – hoa hồng cạnh
-            tranh.
+            <strong className="font-normal">Phế Liệu Tài Lộc Vi Na</strong> cam
+            kết sẽ nhanh chóng làm vừa lòng quý khách với giá cả đi kèm chất
+            lượng – hoa hồng cạnh tranh.
           </p>
           <br />
           <p className="text-justify leading-relaxed">
-            <strong>Công ty phế liệu Tài Lộc Vi Na</strong> là đối tác lớn thu
-            mua phế liệu khu công nghiệp tại địa bàn Bình Dương, TPHCM và toàn
-            quốc.
+            <strong>Phế liệu Tài Lộc Vi Na</strong> là đối tác lớn thu mua phế
+            liệu khu công nghiệp tại địa bàn Bình Dương, TPHCM và toàn quốc.
           </p>
         </div>
         <div className="relative h-80 md:h-auto">
@@ -327,8 +339,8 @@ export default function Home() {
       </div>
       {/* CHUYEN THU MUA CAC LOAI PHE LIEU */}
       <div className="container mx-auto px-4">
-        <h2 className="text-colorPrimary font-bold text-xl sm:text-2xl text-center mb-7">
-          CHUYÊN THU MUA CÁC LOẠI PHẾ LIỆU
+        <h2 className="text-colorPrimary font-bold text-xl sm:text-2xl text-center mb-7 uppercase">
+          Phế Liệu Tài Lộc Vi Na Chuyên Thu Mua Các Loại Phế Liệu
         </h2>
         <div className="grid sm:grid-cols-3 gap-7">
           <div>
@@ -344,17 +356,17 @@ export default function Home() {
             </div>
             <div className="mt-4">
               <h3 className="text-lg sm:text-xl text-colorPrimary text-center font-bold my-1">
-                Thu mua Vải Vụn, Vãi Tồn
+                Thu mua Vải Vụn, Vải Tồn
               </h3>
               <p className="text-sm sm:text-base text-justify">
                 Thu mua vải vụn, vải tồn kho, vải kaki, thun, mua vải cây, vải
                 khúc, vải xéo, vải rẻo, coton loại 1, loại 2 và tất cả các loại
                 vải khác dù ít hay nhiều. Với nhiều năm kinh nghiệm trên thị
-                trường vải, <strong>Tài Lộc Vi Na</strong> thu mua tất cả các
-                loại vải với giá cao, tận nơi, uy tín, nhanh chóng tại các công
-                ty, nhà may, xí nghiệp may mặc, nhà xưởng, cơ sở, khu công
-                nghiệp sản xuất về áo quần, chăn mền, cặp xách,… Chúng tôi cam
-                kết không ép giá khách hàng.
+                trường vải, <strong>Phế Liệu Tài Lộc Vi Na</strong> thu mua tất
+                cả các loại vải với giá cao, tận nơi, uy tín, nhanh chóng tại
+                các công ty, nhà may, xí nghiệp may mặc, nhà xưởng, cơ sở, khu
+                công nghiệp sản xuất về áo quần, chăn mền, cặp xách,… Chúng tôi
+                cam kết không ép giá khách hàng.
               </p>
             </div>
           </div>
@@ -381,11 +393,12 @@ export default function Home() {
                 nghiệp, nhiệt luyện, thủy điện và đời sống hiện nay.
               </p>
               <p className="text-sm sm:text-base text-justify">
-                <strong>Công ty Tài Lộc Vi Na</strong> chuyên thu mua đồng phế
-                liệu các loại như: thu mua đồng vàng, đồng đỏ, đồng thanh, đồng
-                thau, đồng cáp, đồng trục, dây đồng, dây cáp đồng, dây điện cũ,
-                đồng dây điện công trình, đồng dây cáp, hợp kim đồng niken, đồng
-                ve chai, giá đồng vụn, đồng phế liệu, … trên cả nước.
+                <strong>Công ty Thu Mua Phế Liệu Tài Lộc Vi Na</strong> chuyên
+                thu mua đồng phế liệu các loại như: thu mua đồng vàng, đồng đỏ,
+                đồng thanh, đồng thau, đồng cáp, đồng trục, dây đồng, dây cáp
+                đồng, dây điện cũ, đồng dây điện công trình, đồng dây cáp, hợp
+                kim đồng niken, đồng ve chai, giá đồng vụn, đồng phế liệu, …
+                trên cả nước.
               </p>
             </div>
           </div>
@@ -433,13 +446,14 @@ export default function Home() {
                 Thu mua phế liệu Inox
               </h3>
               <p className="text-sm sm:text-base text-justify">
-                <strong>Tài Lộc Vi Na</strong> thu mua tất cả tư liệu dư thừa
-                trong sản xuất kinh doanh từ inox phế liệu như: inox cắt thừa từ
-                phế liệu gia công inox, yêu cầu sản xuất ghế bàn inox, đập rửa
-                mặt, công ty, khu chế xuất, khu công nghiệp lớn đến nhận thanh
-                lý bồn nước inox, bể thép inox, tháo dỡ inox, tủ lạnh, tủ inox,
-                thu mua inox cũ, thùng rác inox, ống hút inox, máy hàn inox, máy
-                đánh bóng inox của các hộ dân gia đình.
+                <strong>Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na</strong> thu mua
+                tất cả tư liệu dư thừa trong sản xuất kinh doanh từ inox phế
+                liệu như: inox cắt thừa từ phế liệu gia công inox, yêu cầu sản
+                xuất ghế bàn inox, đập rửa mặt, công ty, khu chế xuất, khu công
+                nghiệp lớn đến nhận thanh lý bồn nước inox, bể thép inox, tháo
+                dỡ inox, tủ lạnh, tủ inox, thu mua inox cũ, thùng rác inox, ống
+                hút inox, máy hàn inox, máy đánh bóng inox của các hộ dân gia
+                đình.
               </p>
             </div>
           </div>
@@ -469,12 +483,13 @@ export default function Home() {
               </p>
               <p className="text-sm sm:text-base text-justify">
                 Tuy nhiên, quý khách hàng đừng lo lắng vì
-                <strong> Tài Lộc Vi Na</strong> cam kết thu mua phế liệu sắt
-                thép giá cao và ổn định nhất thị trường cả nước. Chúng tôi nhận
-                thu mua sắt thép công trình, công ty, xe cũ, nhà xưởng, mua tàu
-                thuyền, xà lan, neo, mua bán sắt vụn, máy móc thiết bị thanh lý,
-                sắt đặc, sắt cây, dây thép sắt, sắt tiện, bột sắt, sắt mài, sắt
-                gọt, bazo sắt, phôi thép, quặng thép, thép nguyên liệu, …
+                <strong> Phế Liệu Tài Lộc Vi Na</strong> cam kết thu mua phế
+                liệu sắt thép giá cao và ổn định nhất thị trường cả nước. Chúng
+                tôi nhận thu mua sắt thép công trình, công ty, xe cũ, nhà xưởng,
+                mua tàu thuyền, xà lan, neo, mua bán sắt vụn, máy móc thiết bị
+                thanh lý, sắt đặc, sắt cây, dây thép sắt, sắt tiện, bột sắt, sắt
+                mài, sắt gọt, bazo sắt, phôi thép, quặng thép, thép nguyên liệu,
+                …
               </p>
             </div>
           </div>
@@ -505,7 +520,8 @@ export default function Home() {
                 gây tổn thương nghiêm trọng cho hệ thần kinh, gây ngộ độc kim
                 loại nghiêm trọng. Vì vậy, khi sở hữu chúng, quý khách nên gọi
                 cho các công ty mua phế liệu có đủ chức năng pháp lý xử lý và
-                được cấp phép như <strong>công ty Tài Lộc Vi Na</strong> để thu
+                được cấp phép như{" "}
+                <strong>Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na</strong> để thu
                 mua loại kim loại này nhanh chóng, tránh nguy hiểm đến sức khỏe
                 của bản thân và gia đình.
               </p>
@@ -533,9 +549,9 @@ export default function Home() {
                 hỏng như tivi, laptop, bản mạch, vi mạch, memory chip, Ram, IC,
                 main điện thoại, pin điện thoại, chip, main laptop, ổ đĩa, Màn
                 hình máy tính, máy dữ liệu, chuột, …{" "}
-                <strong>Tài Lộc Vi Na</strong> chúng tôi cam đoan có nhiều năm
-                kinh nghiệm trong thu mua hàng khó phân biêt với giá cạnh tranh
-                trên thị trường.
+                <strong>Phế Liệu Tài Lộc Vi Na</strong> chúng tôi cam đoan có
+                nhiều năm kinh nghiệm trong thu mua hàng khó phân biêt với giá
+                cạnh tranh trên thị trường.
               </p>
             </div>
           </div>
@@ -559,10 +575,10 @@ export default function Home() {
                 ngón hợp kim, thép gió, mũi khoan hợp kim, hợp kim nhôm, dao hợp
                 kim, carbay, các loại hợp kim titanium, hợp kim đồng, hợp kim
                 nhôm, hợp kim sắt, hợp kim thép, các hợp kim của sắt, đồng,
-                nhôm, inox, … <strong>Công Ty Tài Lộc Vi Na</strong> tự tin cam
-                kết có thể nhận diện, phân loại, định giá chính xác và mua bán
-                hợp kim cũ giá cao dù cho đặc tính, tính chất, thành phần của
-                hợp kim phức tạp và được am hiểu rất ít.
+                nhôm, inox, … <strong>Công Ty Phế Liệu Tài Lộc Vi Na</strong> tự
+                tin cam kết có thể nhận diện, phân loại, định giá chính xác và
+                mua bán hợp kim cũ giá cao dù cho đặc tính, tính chất, thành
+                phần của hợp kim phức tạp và được am hiểu rất ít.
               </p>
             </div>
           </div>
@@ -605,14 +621,14 @@ export default function Home() {
       {/* QUY TRINH THU MUA */}
       <div className="container mx-auto px-4">
         <h2 className="text-colorPrimary font-bold text-xl sm:text-2xl text-center mb-7 uppercase">
-          QUY TRÌNH THU MUA PHẾ LIỆU TẠI PHẾ LIỆU TÀI LỘC VI NA
+          Quy Trình Thu Mua Phế Liệu Tại Phế Liệu Tài Lộc Vi Na
         </h2>
         <div className="bg-[#bbf7d0] p-4 rounded-md">
           <p className="sm:text-lg text-justify">
             <strong>Bước 1 : </strong>Nhân viên thu mua sẽ tiếp nhận cuộc gọi
             của khách hàng có nhu cầu thanh lý phế liệu qua
             <strong> Hotline/Zalo: 0989 015 053 </strong>
-            của<strong> Phế Liệu Tài Lộc Vi Na</strong>.
+            của<strong> Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na</strong>.
           </p>
           <br />
           <p className="sm:text-lg text-justify">
@@ -649,18 +665,20 @@ export default function Home() {
           <br />
           <p className="sm:text-lg text-justify">
             <strong>Bước 6 : </strong> Công ty
-            <strong> Phế Liệu Phát Tài Lộc </strong> thanh toán cho khách hàng
-            ngay sau khi cân và bốc xếp phế liệu lên xe. Hình thức thanh toán
-            linh hoạt theo yêu cầu của quý vị, có thể chuyển khoản hoặc trả tiền
-            mặt trực tiếp.
+            <strong> Thu Mua Phế Liệu Tài Lộc Vi Na </strong> thanh toán cho
+            khách hàng ngay sau khi cân và bốc xếp phế liệu lên xe. Hình thức
+            thanh toán linh hoạt theo yêu cầu của quý vị, có thể chuyển khoản
+            hoặc trả tiền mặt trực tiếp.
           </p>
           <br />
           <p className="sm:text-lg text-justify">
             Quy trình thu mua phế liệu của
-            <strong> Phế Liệu Tài Lộc Vi Na </strong>
+            <strong> Công Ty Phế Liệu Tài Lộc Vi Na </strong>
             được thể hiện rõ ràng trong hợp đồng kinh tế. Nếu khách hàng đồng ý
-            với Báo giá của <strong> Phế Liệu Tài Lộc Vi Na</strong>, hai bên sẽ
-            tiến hành ký kết hợp đồng. <strong>Phế Liệu Tài Lộc Vi Na </strong>
+            với Báo giá của{" "}
+            <strong className="font-normal"> Phế Liệu Tài Lộc Vi Na</strong>,
+            hai bên sẽ tiến hành ký kết hợp đồng.{" "}
+            <strong className="font-normal">Phế Liệu Tài Lộc Vi Na </strong>
             cam kết thực hiện đúng những điều khoản trong hợp đồng, tôn trọng
             bạn hàng ở mức cao nhất, sẵn sàng bồi thường thiệt hại nếu có vi
             phạm hợp đồng.
@@ -678,7 +696,6 @@ export default function Home() {
       </div>
       {/* CAU HOI THUONG GAP */}
       <Question />
-      
     </div>
   );
 }

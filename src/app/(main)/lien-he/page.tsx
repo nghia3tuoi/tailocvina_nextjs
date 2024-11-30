@@ -1,4 +1,4 @@
-import { FaLocationDot, FaPhone } from "react-icons/fa6";
+import { FaEarthAmericas, FaLocationDot, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 import { Metadata } from "next";
@@ -40,8 +40,18 @@ const Contact = () => {
                 <MdEmail className="text-xl" />
               </div>
               <p>
-                <span className="font-bold">Email:</span>
-                tailocvina.work@gmail.com
+                <span className="font-bold">Email: </span>
+                phelieutailocvina@gmail.com
+              </p>
+            </div>
+
+            <div className="flex  gap-2">
+              <div className="flex items-center">
+                <FaEarthAmericas className="text-xl" />
+              </div>
+              <p>
+                <span className="font-bold">Website: </span>
+                phelieutailocvina.com
               </p>
             </div>
 

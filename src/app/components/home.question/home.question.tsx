@@ -20,20 +20,20 @@ const Question = () => {
       </h2>
       <div className="bg-[#bbf7d0] p-3 sm:p-14 rounded-md">
         <ul className="bg-white p-6 rounded-md">
-          <div>
-            <li
+          <li>
+            <div
               className="flex items-start gap-3 border-colorPrimary/20 p-3 border rounded-md my-2 cursor-pointer"
               onClick={() => {
                 handleSelectTab(1);
               }}
             >
-              <button className="">
+              <span >
                 {tab === 1 ? (
                   <IoChevronUp className="text-2xl sm:text-3xl text-colorPrimary/70" />
                 ) : (
                   <IoChevronDown className="text-2xl sm:text-3xl text-colorPrimary/70" />
                 )}
-              </button>
+              </span>
               <span
                 className={`sm:text-lg ${tab === 1 ? "text-colorPrimary" : ""}`}
               >
@@ -47,7 +47,7 @@ const Question = () => {
                 </strong>{" "}
                 có thu mua tận nơi không?
               </span>
-            </li>
+            </div>
             {tab === 1 && (
               <p className="p-3 text-justify">
                 <strong className="text-black font-normal">
@@ -59,32 +59,36 @@ const Question = () => {
                 của mình.
               </p>
             )}
-          </div>
-          <div>
-            <li
+          </li>
+          <li>
+            <div
               className="flex items-start gap-3 border-colorPrimary/20 p-3 border rounded-md my-2 cursor-pointer"
               onClick={() => {
                 handleSelectTab(2);
               }}
             >
-              <button>
+              <span>
                 {tab === 2 ? (
                   <IoChevronUp className="text-2xl sm:text-3xl text-colorPrimary/70" />
                 ) : (
                   <IoChevronDown className="text-2xl sm:text-3xl text-colorPrimary/70" />
                 )}
-              </button>
-              <span  className={`sm:text-lg ${tab === 2 ? "text-colorPrimary" : ""}`}>
+              </span>
+              <span
+                className={`sm:text-lg ${tab === 2 ? "text-colorPrimary" : ""}`}
+              >
                 Giá phế liệu tại{" "}
-                <strong  className={`text-black font-normal sm:text-lg ${
+                <strong
+                  className={`text-black font-normal sm:text-lg ${
                     tab === 2 ? "text-colorPrimary" : ""
-                  }`}>
+                  }`}
+                >
                   {" "}
-                  Tài Lộc Vi Na{" "}
+                  Phế Liệu Tài Lộc Vi Na{" "}
                 </strong>{" "}
                 có ổn định không?
               </span>
-            </li>
+            </div>
             {tab === 2 && (
               <p className="p-3 text-justify">
                 Giá thu mua phụ thuộc rất nhiều vào biến động thị trường trong
@@ -96,68 +100,76 @@ const Question = () => {
                 nhất, ổn định nhất ở mọi thời điểm.
               </p>
             )}
-          </div>
-          <div>
-            <li
+          </li>
+          <li>
+            <div
               className="flex items-start gap-3 border-colorPrimary/20 p-3 border rounded-md my-2 cursor-pointer"
               onClick={() => {
                 handleSelectTab(3);
               }}
             >
-              <button>
+              <span>
                 {tab === 3 ? (
                   <IoChevronUp className="text-2xl sm:text-3xl text-colorPrimary/70" />
                 ) : (
                   <IoChevronDown className="text-2xl sm:text-3xl text-colorPrimary/70" />
                 )}
-              </button>
-              <span  className={`sm:text-lg ${tab === 3 ? "text-colorPrimary" : ""}`} >
-                <strong  className={`text-black font-normal sm:text-lg ${
+              </span>
+              <span
+                className={`sm:text-lg ${tab === 3 ? "text-colorPrimary" : ""}`}
+              >
+                <strong
+                  className={`text-black font-normal sm:text-lg ${
                     tab === 3 ? "text-colorPrimary" : ""
-                  }`}>
-                  Tài Lộc Vi Na
+                  }`}
+                >
+                  Phế Liệu Tài Lộc Vi Na
                 </strong>{" "}
                 có nhận tư vấn miễn phí không?
               </span>
-            </li>
+            </div>
             {tab === 3 && (
               <p className="p-3 text-justify">
                 <strong className="text-black font-normal">
                   Công Ty Phế Liệu Tài Lộc Vi Na{" "}
                 </strong>
                 tư vấn báo giá phế liệu nhanh chóng và hoàn toàn miễn phí, chỉ
-                cần một cuộc gọi đến số điện thọai <strong>0989 015 053</strong>.
-                Hoặc khách hàng có thể tự tra cứu vì mọi thông tin chi tiết về
+                cần một cuộc gọi đến số điện thọai <strong>0989 015 053</strong>
+                . Hoặc khách hàng có thể tự tra cứu vì mọi thông tin chi tiết về
                 bảng giá phế liệu sẽ được cập nhật định kỳ trên website của công
                 ty chúng tôi.
               </p>
             )}
-          </div>
-          <div>
-            <li
+          </li>
+          <li>
+            <div
               className="flex items-start gap-3 border-colorPrimary/20 p-3 border rounded-md my-2 cursor-pointer"
               onClick={() => {
                 handleSelectTab(4);
               }}
             >
-              <button>
+              <span>
                 {tab === 4 ? (
                   <IoChevronUp className="text-2xl sm:text-3xl text-colorPrimary/70" />
                 ) : (
                   <IoChevronDown className="text-2xl sm:text-3xl text-colorPrimary/70" />
                 )}
-              </button>
-              <span  className={`sm:text-lg ${tab === 4 ? "text-colorPrimary" : ""}`} >
+              </span>
+              <p
+                className={`sm:text-lg ${tab === 4 ? "text-colorPrimary" : ""}`}
+              >
                 Làm sao để{" "}
-                <strong  className={`text-black font-normal sm:text-lg ${
+                <strong
+                  className={`text-black font-normal sm:text-lg ${
                     tab === 4 ? "text-colorPrimary" : ""
-                  }`}>
+                  }`}
+                >
                   {" "}
-                  Tài Lộc Vi Na{" "}
+                  Phế Liệu Tài Lộc Vi Na{" "}
                 </strong>{" "}
                 báo giá phế liệu nhanh chóng nhất?
-              </span>
-            </li>
+              </p>
+            </div>
             {tab === 4 && (
               <p className="p-3 text-justify">
                 Bạn hãy thêm bạn với{" "}
@@ -172,7 +184,7 @@ const Question = () => {
                 nhau về mức chiết khấu mà người môi giới sẽ nhận được.
               </p>
             )}
-          </div>
+          </li>
         </ul>
       </div>
     </div>

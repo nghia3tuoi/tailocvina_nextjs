@@ -62,9 +62,9 @@ const MenuHeader = ({ handleToggleMenu, menuRef }: Props) => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/thu-gom-xu-ly-rac-thai-gia-re"
                     className="text-[#8b8b8b] uppercase text-xs font-medium block py-2 hover:text-black"
-                  >
+                  onClick={handleToggleMenu}>
                     Thu Gôm và Xử lí rác giá rẻ
                   </Link>
                 </li>
