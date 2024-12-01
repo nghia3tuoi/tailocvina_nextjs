@@ -4,6 +4,7 @@ import Question from "./components/home.question/home.question";
 import FeedBack from "./components/home.feedback/home.feedback";
 import Link from "next/link";
 import { Metadata } from "next";
+import Head from "next/head";
 export const metadata: Metadata = {
   title: "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao",
   description:
@@ -12,6 +13,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div>
+       <Head>
+        <title>Trang chủ - Phế liệu Tài Lộc Vina</title>
+        <link
+          rel="canonical"
+          href="https://www.phelieutailocvina.com/"
+          key="canonical"
+        />
+      </Head>
       {/* banner */}
       <div className="relative h-[500px] ">
         <Image
