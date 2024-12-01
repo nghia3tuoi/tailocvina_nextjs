@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao",
   description:
-    "ài Lộc Vi Na - Công Ty Ty Thu Mua Phế Liệu Giá Cao chuyên thu mua phế liệu giá cao, uy tín và chuyên nghiệp. Chúng tôi cam kết mang lại giá trị tối đa cho khách hàng qua dịch vụ thu mua phế liệu nhanh chóng, an toàn. Hãy liên hệ với chúng tôi ngay hôm nay để nhận báo giá tốt nhất.",
+    "Tài Lộc Vi Na - Công Ty Ty Thu Mua Phế Liệu Giá Cao chuyên thu mua phế liệu giá cao, uy tín và chuyên nghiệp. Chúng tôi cam kết mang lại giá trị tối đa cho khách hàng qua dịch vụ thu mua phế liệu nhanh chóng, an toàn. Hãy liên hệ với chúng tôi ngay hôm nay để nhận báo giá tốt nhất.",
 };
 export default function Home() {
   return (
