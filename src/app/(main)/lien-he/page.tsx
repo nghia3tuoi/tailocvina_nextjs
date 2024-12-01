@@ -1,6 +1,7 @@
 import { FaEarthAmericas, FaLocationDot, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { Metadata } from "next";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Liên Hệ - Công Ty TNHH Tài Lộc Vi Na Thu Mua Phế Liệu Giá Cao",
@@ -8,6 +9,16 @@ export const metadata: Metadata = {
     "Liên hệ với Công Ty TNHH Tài Lộc Vi Na, chuyên thu mua phế liệu giá cao, uy tín và chuyên nghiệp. Chúng tôi cam kết mang lại giá trị tối đa cho khách hàng qua dịch vụ thu mua phế liệu nhanh chóng, an toàn. Hãy liên hệ với chúng tôi ngay hôm nay để nhận báo giá tốt nhất.",
 };
 const Contact = () => {
+  <Head>
+    <title>
+      Liên Hệ - Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na Thu Mua Phế Liệu Giá Cao
+    </title>
+    <link
+      rel="canonical"
+      href="https://www.phelieutailocvina.com/"
+      key="canonical"
+    />
+  </Head>;
   return (
     <div className="container mx-auto px-4">
       <h1 className="uppercase font-bold text-2xl text-center mt-7">

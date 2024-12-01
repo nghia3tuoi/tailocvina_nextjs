@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
        <Head>
-        <title>Trang chủ - Phế liệu Tài Lộc Vina</title>
+        <title>Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao</title>
         <link
           rel="canonical"
           href="https://www.phelieutailocvina.com/"
