@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://tailocvina.vercel.app/
+Host: https://phelieutailocvina.com/
 
 # Sitemaps
-Sitemap: https://tailocvina.vercel.app/sitemap.xml
+Sitemap: https://phelieutailocvina.com/sitemap.xml
