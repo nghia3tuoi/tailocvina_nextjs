@@ -8,11 +8,11 @@ import ZaloDynamic from "./components/zalo-dynamic/zalo-dynamic";
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata: Metadata = {
-  title: "Công Ty Phế Liệu Tài Lộc Vi Na",
+  title: "Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na",
   description:
-    "Công Ty TNHH Tài Lộc Vi Na chuyên thu mua phế liệu, vãi vụn giá cao, thu gôm và xử lý rác thải công nghiệp giá rẻ với mức giá cạnh tranh nhất trên thị trường.",
+    "Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na chuyên thu mua phế liệu, vãi vụn giá cao, thu gôm và xử lý rác thải công nghiệp giá rẻ với mức giá cạnh tranh nhất trên thị trường.",
   keywords:
-    "thu mua phế liệu, thu mua hàng tồn, thu mua vãi vụn, giá phế liệu, công ty thu mua phế liệu, thu gom phế liệu tận nơi, thu mua phế liệu giá cao, thu mua vải vụn giá cao, thu mua hàng tồn giá cao",
+    "công ty tnhh tài lộc vi na, công ty thu mua phế liệu tài lộc vi na, công ty phế liệu tài lộc vi na, phế liệu tài lộc vi na, thu mua phế liệu, tài lộc vi na, phế liệu, thua mua vải vụn, công ty phế liệu",
 };
 
 export default function RootLayout({
