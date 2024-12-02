@@ -8,7 +8,7 @@ import ZaloDynamic from "./components/zalo-dynamic/zalo-dynamic";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import BackTopDynamic from "./components/backtop-dynamic/backtop-dynamic";
 import { Organization, WithContext } from "schema-dts";
-import Head from "next/head";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao",
@@ -51,12 +51,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </Head>
       <body>
         <Header />
         {children}
@@ -66,7 +60,11 @@ export default function RootLayout({
         <Footer />
       </body>
       <GoogleAnalytics gaId="G-02KZMDKPZ1" />
-      
+      <Script
+        id="jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </html>
   );
 }

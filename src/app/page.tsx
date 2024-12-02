@@ -29,7 +29,12 @@ export default function Home() {
           content="Phế Liệu Tài Lộc Vi Na chuyên thu mua phế liệu giá cao, vải vụn, thu gôm xử lí rác thải uy tín và chuyên nghiệp. "
         />
         <meta property="og:url" content="https://www.phelieutailocvina.com/" />
-        <meta property="og:image" content="https://www.phelieutailocvina.com/favicon.ico" />
+        <meta
+          property="og:image"
+          content="https://www.phelieutailocvina.com/banner.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="Phế Liệu Tài Lộc Vi Na" />
         <meta property="og:locale" content="vi_VN" />
       </Head>
