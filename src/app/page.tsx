@@ -8,7 +8,7 @@ import Head from "next/head";
 export const metadata: Metadata = {
   title: "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao",
   description:
-    "Tài Lộc Vi Na - Công Ty Ty Thu Mua Phế Liệu Giá Cao chuyên thu mua phế liệu giá cao, uy tín và chuyên nghiệp. Chúng tôi cam kết mang lại giá trị tối đa cho khách hàng qua dịch vụ thu mua phế liệu nhanh chóng, an toàn. Hãy liên hệ với chúng tôi ngay hôm nay để nhận báo giá tốt nhất.",
+    "Công Ty Thu Mua Phế Liệu Giá Cao - Tài Lộc Vi Na chuyên thu mua phế liệu giá cao, uy tín và chuyên nghiệp. Chúng tôi cam kết mang lại giá trị tối đa cho khách hàng qua dịch vụ thu mua phế liệu nhanh chóng, an toàn. Hãy liên hệ với chúng tôi ngay hôm nay để nhận báo giá tốt nhất.",
 };
 export default function Home() {
   return (
@@ -20,6 +20,18 @@ export default function Home() {
           href="https://www.phelieutailocvina.com/"
           key="canonical"
         />
+        <meta
+          property="og:title"
+          content="Công Ty Thu Mua Phế Liệu Giá Cao - Tài Lộc Vi Na"
+        />
+        <meta
+          property="og:description"
+          content="Phế Liệu Tài Lộc Vi Na chuyên thu mua phế liệu giá cao, vải vụn, thu gôm xử lí rác thải uy tín và chuyên nghiệp. "
+        />
+        <meta property="og:url" content="https://www.phelieutailocvina.com/" />
+        <meta property="og:image" content="https://www.phelieutailocvina.com/favicon.ico" />
+        <meta property="og:site_name" content="Phế Liệu Tài Lộc Vi Na" />
+        <meta property="og:locale" content="vi_VN" />
       </Head>
       {/* banner */}
       <div className="relative h-[500px] ">

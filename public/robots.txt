@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://phelieutailocvina.com/
+Host: https://www.phelieutailocvina.com/
 
 # Sitemaps
-Sitemap: https://phelieutailocvina.com/sitemap.xml
+Sitemap: https://www.phelieutailocvina.com/sitemap.xml
