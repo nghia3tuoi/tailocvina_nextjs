@@ -30,12 +30,13 @@ const FeedBack = () => {
         "Là chủ một xưởng nhỏ, tôi rất cần tìm đối tác thu mua vải vụn thường xuyên. Tài Lộc Vi Na đã giúp tôi xử lý nhanh số lượng lớn vải thừa và phế liệu, đảm bảo vệ sinh xưởng. Dịch vụ rất tốt, giá thu mua cao và đội ngũ làm việc đúng giờ. Tôi chắc chắn sẽ tiếp tục hợp tác lâu dài.",
     },
     {
-        name: "Anh Hoàn",
-        avatarUrl: "40-year-old-man-build.jpg",
-        feedback:
-          "Công ty Tài Lộc Vi Na luôn là lựa chọn hàng đầu của tôi khi cần thanh lý phế liệu công trình. Họ làm việc nhanh chóng, giá thu mua phế liệu cao và minh bạch. Tôi rất ấn tượng với thái độ làm việc chuyên nghiệp của đội ngũ nhân viên tại đây.",
-      },
+      name: "Anh Hoàn",
+      avatarUrl: "40-year-old-man-build.jpg",
+      feedback:
+        "Công ty Tài Lộc Vi Na luôn là lựa chọn hàng đầu của tôi khi cần thanh lý phế liệu công trình. Họ làm việc nhanh chóng, giá thu mua phế liệu cao và minh bạch. Tôi rất ấn tượng với thái độ làm việc chuyên nghiệp của đội ngũ nhân viên tại đây.",
+    },
   ];
+
   return (
     <div className="container mx-auto px-4">
       <h2 className="text-colorPrimary font-bold text-xl sm:text-2xl text-center mb-7">
@@ -45,25 +46,25 @@ const FeedBack = () => {
         spaceBetween={50}
         slidesPerView={1}
         breakpoints={{
-          640: {
+          768: {
             slidesPerView: 2,
           },
         }}
-       loop
+        loop
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="flex items-center justify-center">
               <div className="flex items-start gap-4">
                 <div className="bg-colorPrimary p-1 rounded-full">
-                  <div className="rounded-full relative h-24 w-24 ">
+                  <div className="rounded-full  h-24 w-24">
                     <Image
                       src={`/${slide.avatarUrl}`}
                       alt="ý kiến khách hàng từ công ty thu mua phế liệu tài lộc vi na"
-                      sizes=""
-                      fill
+                      width={1024} // Cung cấp width và height để Next.js biết kích thước của hình ảnh
+                      height={1024}
                       className="rounded-full"
-                     
+                      loading="lazy" // Lazy loading cho hình ảnh khi chưa cần thiết
                     />
                   </div>
                 </div>

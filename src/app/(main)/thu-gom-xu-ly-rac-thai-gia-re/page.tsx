@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const XuLiRacThai = () => {
   return (
     <div className="container mx-auto px-4">
-      <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center mb-7 uppercase mt-7 ">
+      <h1 className="text-2xl lg:text-3xl font-bold text-center mb-7 uppercase mt-7 ">
         Thu gom, vận chuyển và xử lý rác thải giá rẻ
       </h1>
       <div className="mt-7">

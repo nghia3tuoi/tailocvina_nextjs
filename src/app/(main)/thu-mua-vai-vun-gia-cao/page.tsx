@@ -10,7 +10,7 @@ const ThuMuaVaiVunGiaCao = () => {
   return (
     <div className="container mx-auto px-4">
       <div className="mt-7">
-        <h1 className="font-bold text-xl md:text-2xl lg:text-3xl text-center mb-7">
+        <h1 className="font-bold text-2xl lg:text-3xl text-center mb-7">
           THU MUA VẢI VỤN GIÁ CAO SỐ LƯỢNG LỚN
         </h1>
         <p className="text-justify leading-relaxed">
@@ -62,6 +62,7 @@ const ThuMuaVaiVunGiaCao = () => {
           width={300} // Set the desired width
           height={300} // Set the desired height
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          priority
         />
         <Image
           src="/phe-lieu-vai-vun.jpg"
@@ -70,6 +71,7 @@ const ThuMuaVaiVunGiaCao = () => {
           width={300} // Set the desired width
           height={300} // Set the desired height
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          priority
         />
       </div>
       <div className="mt-7">

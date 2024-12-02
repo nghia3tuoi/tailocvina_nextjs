@@ -11,8 +11,8 @@ const GioiThieu = () => {
   return (
     <div className="mx-auto container px-4">
       <div className="pt-7">
-        <h1 className="text-2xl font-bold mb-7 uppercase text-center">
-          Giới thiệu về Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na
+        <h1 className="text-2xl lg:text-3xl font-bold mb-7 uppercase text-center">
+          Giới thiệu - Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na Thu Mua Phế Liệu Giá Cao
         </h1>
         <p className="text-justify leading-relaxed">
           <strong>Công ty thu mua phế liệu Tài Lộc Vi Na </strong> chuyên thu
@@ -164,6 +164,8 @@ const GioiThieu = () => {
             width={480} // Chiều rộng gốc của ảnh
             height={0} // Chiều cao gốc của ảnh
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="h-auto"
+            priority
           />
 
           <Image
@@ -172,6 +174,8 @@ const GioiThieu = () => {
             width={480} // Chiều rộng gốc của ảnh
             height={640} // Chiều cao gốc của ảnh
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="h-auto"
+            priority
           />
         </div>
         <br />

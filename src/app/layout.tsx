@@ -6,6 +6,7 @@ import Footer from "./components/footer/footer";
 import PhoneDynamic from "./components/phone-dynamic/phone-dynamic";
 import ZaloDynamic from "./components/zalo-dynamic/zalo-dynamic";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import BackTopDynamic from "./components/backtop-dynamic/backtop-dynamic";
 
 export const metadata: Metadata = {
   title: "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao",
@@ -27,6 +28,7 @@ export default function RootLayout({
         {children}
         <PhoneDynamic />
         <ZaloDynamic />
+        <BackTopDynamic/>
         <Footer />
       </body>
       <GoogleAnalytics gaId="G-02KZMDKPZ1" />

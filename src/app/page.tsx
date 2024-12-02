@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div>
-       <Head>
+      <Head>
         <title>Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao</title>
         <link
           rel="canonical"
@@ -24,12 +24,12 @@ export default function Home() {
       {/* banner */}
       <div className="relative h-[500px] ">
         <Image
-          sizes=""
           priority
           src="/banner.jpg"
           alt="phế liệu Tài Lộc Vi Na"
           fill
-          className="object-cover" // Tùy chỉnh nếu bạn muốn hình ảnh cắt xén hay thu nhỏ theo tỷ lệ
+          className="object-cover " // Tùy chỉnh nếu bạn muốn hình ảnh cắt xén hay thu nhỏ theo tỷ lệ
+          sizes="100vw"
         />
         <div className="bg-white/90 absolute text-center p-8 left-[5%] bottom-[5%] top-[5%] right-[5%] overflow-auto lg:right-[30%] max-w-full">
           <h1 className="uppercase  text-colorPrimary font-bold text-xl md:text-2xl lg:text-4xl my-2.5">
@@ -66,12 +66,11 @@ export default function Home() {
         <div className="flex items-center gap-4 ">
           <div className="bg-colorPrimary p-3 rounded-full flex items-center justify-center">
             <Image
-              sizes=""
-              priority
               src="/garbage-truck.svg"
-              alt="Thu mua tận nơi"
+              alt="Công ty phế liệu tài lộc vi na Thu mua tận nơi"
               width={50}
               height={50}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="min-w-[50px]"
             />
           </div>
@@ -88,10 +87,8 @@ export default function Home() {
         <div className="flex items-center gap-4">
           <div className="bg-colorPrimary p-3 rounded-full flex items-center justify-center">
             <Image
-              sizes=""
-              priority
               src="/phone-call-call-svgrepo-com.svg"
-              alt="cc"
+              alt="Công ty phế liệu tài lộc vi na hoạt động 24/24"
               width={50}
               height={50}
               className="min-w-[50px]"
@@ -109,10 +106,8 @@ export default function Home() {
         <div className="flex items-center gap-4">
           <div className="bg-colorPrimary p-3 rounded-full flex items-center justify-center">
             <Image
-              sizes=""
-              priority
               src="/pay.svg"
-              alt="cc"
+              alt="công ty thu mua phế liệu tài lộc vi na thanh toán đa nền tảng"
               width={50}
               height={50}
               className="min-w-[50px]"
@@ -177,13 +172,12 @@ export default function Home() {
         </div>
         <div className="sm:basis-1/2">
           <Image
-            sizes=""
-            priority
             src="/banner.jpg"
             alt="Thu Mua Phế Liệu Tài Lộc Vi Na"
             width={500}
             height={0}
             className="w-full h-auto"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       </div>
@@ -287,8 +281,11 @@ export default function Home() {
             quý khách hàng.
           </p>
           <p className="text-xl text-center my-3">
-            <span className="text-[#00aae7]">GỌI NGAY TƯ VẤN VỚI HOTLINE</span>:
-            <span className="text-red-600">
+            <span className="text-[#365314] font-bold">
+              GỌI NGAY TƯ VẤN VỚI HOTLINE
+            </span>
+            :
+            <span className="text-red-500">
               <strong> 0989 015 053</strong>
             </span>
           </p>
@@ -339,12 +336,11 @@ export default function Home() {
         </div>
         <div className="relative h-80 md:h-auto">
           <Image
-            sizes=""
-            priority
             src="/Thu-gom-xu-ly-chat-thai-nguy-hai-scaled.jpg"
-            alt={""}
+            alt="công ty phế liệu tài lộc vi na thu gôm và xử lí rác thải già rẻ nhất thị trường"
             fill
             className="object-cover"
+            loading="lazy"
           />
         </div>
       </div>
@@ -362,11 +358,10 @@ export default function Home() {
             <div className="w-full h-[200px] relative ">
               <Image
                 src="/phe-lieu-vai-vun.jpg"
-                alt="Thu mua vãi vụn, vãi tồn giá cao"
+                alt="Công ty tài lộc vi na Thu mua vãi vụn, vãi tồn giá cao"
                 fill
-                sizes=""
-                priority
                 className="object-cover rounded-sm"
+                loading="lazy"
               />
             </div>
             <div className="mt-4">
@@ -391,9 +386,8 @@ export default function Home() {
                 src="/phe-lieu-dong.jpg"
                 alt="Thu mua phế liệu đồng giá cao"
                 fill
-                sizes=""
-                priority
                 className="object-cover rounded-sm"
+                loading="lazy"
               />
             </div>
             <div className="mt-4">
@@ -423,9 +417,8 @@ export default function Home() {
                 src="/phe-lieu-nhom.jpg"
                 alt="Thu mua phế liệu nhôm giá cao"
                 fill
-                sizes=""
-                priority
                 className="object-cover rounded-sm"
+                loading="lazy"
               />
             </div>
             <div className="mt-4">
@@ -451,9 +444,8 @@ export default function Home() {
                 src="/phe-lieu-inox.jpg"
                 alt="Thu mua phế liệu inox giá cao"
                 fill
-                sizes=""
-                priority
                 className="object-cover rounded-sm"
+                loading="lazy"
               />
             </div>
             <div className="mt-4">
@@ -478,9 +470,8 @@ export default function Home() {
                 src="/phe-lieu-sat.jpg"
                 alt="Thu mua phế liệu sắt thép giá cao"
                 fill
-                sizes=""
-                priority
                 className="object-cover rounded-sm"
+                loading="lazy"
               />
             </div>
             <div className="mt-4">
@@ -514,9 +505,8 @@ export default function Home() {
                 src="/phe-lieu-chi.jpg"
                 alt="Thu mua phế liệu chì giá cao"
                 fill
-                sizes=""
-                priority
                 className="object-cover rounded-sm"
+                loading="lazy"
               />
             </div>
             <div className="mt-4">
@@ -549,9 +539,8 @@ export default function Home() {
                 src="/phe-lieu-linh-kien-dien-tu.jpg"
                 alt="Thu mua linh kiện điện tử giá cao"
                 fill
-                sizes=""
-                priority
                 className="object-cover rounded-sm"
+                loading="lazy"
               />
             </div>
             <div className="mt-4">
@@ -576,9 +565,8 @@ export default function Home() {
                 src="/phe-lieu-hop-kim.jpg"
                 alt="Thu mua phế liệu hợp kim giá cao"
                 fill
-                sizes=""
-                priority
                 className="object-cover rounded-sm"
+                loading="lazy"
               />
             </div>
             <div className="mt-4">
@@ -603,9 +591,8 @@ export default function Home() {
                 src="/phe-lieu-niken.jpg"
                 alt="Thu mua phế liệu niken giá cao"
                 fill
-                sizes=""
-                priority
                 className="object-cover rounded-sm"
+                loading="lazy"
               />
             </div>
             <div className="mt-4">
