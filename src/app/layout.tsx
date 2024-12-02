@@ -9,6 +9,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import BackTopDynamic from "./components/backtop-dynamic/backtop-dynamic";
 import { Organization, WithContext } from "schema-dts";
 import Script from "next/script";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao",
@@ -51,6 +52,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>Phế Liệu Tài Lộc Vi Na</title>
+        <link
+          rel="canonical"
+          href="https://www.phelieutailocvina.com/"
+          key="canonical"
+        />
+      </Head>
       <body>
         <Header />
         {children}

@@ -14,12 +14,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao</title>
-        <link
-          rel="canonical"
-          href="https://www.phelieutailocvina.com/"
-          key="canonical"
-        />
+       
         <meta
           property="og:title"
           content="Công Ty Thu Mua Phế Liệu Giá Cao - Tài Lộc Vi Na"
