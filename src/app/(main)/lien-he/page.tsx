@@ -22,12 +22,12 @@ const Contact = () => {
   return (
     <div className="container mx-auto px-4">
       <h1 className="uppercase font-bold text-2xl text-center mt-7">
-        THÔNG TIN LIÊN HỆ
+        Thông Tin Lên Hệ Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 pb-7">
         <div className="mt-7  bg-[#f6f6f6] border p-5">
           <h2 className="uppercase font-bold  text-lg mb-3">
-            CÔNG TY TNHH THU MUA PHẾ LIỆU TÀI LỘC VI NA
+            CÔNG TY THU MUA PHẾ LIỆU TÀI LỘC VI NA
           </h2>
           <div className="flex flex-col gap-5 text-justify ">
             <p className="leading-loose">

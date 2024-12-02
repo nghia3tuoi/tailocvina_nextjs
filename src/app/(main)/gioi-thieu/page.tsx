@@ -11,9 +11,8 @@ const GioiThieu = () => {
   return (
     <div className="mx-auto container px-4">
       <div className="pt-7">
-        <h1 className=" text-xl font-bold mb-3 capitalize text-justify">
-          Giới thiệu về Công ty TNHH Tài Lộc Vi Na – Chuyên thu mua phế liệu,
-          vải vụn số lượng lớn, thu gôm và xử lý rác thải công nghiệp
+        <h1 className="text-2xl font-bold mb-7 uppercase text-center">
+          Giới thiệu về Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na
         </h1>
         <p className="text-justify leading-relaxed">
           <strong>Công ty thu mua phế liệu Tài Lộc Vi Na </strong> chuyên thu
@@ -135,7 +134,7 @@ const GioiThieu = () => {
           <span className="font-bold">Holine:</span> 0989 015 053
         </p>
         <p className="text-justify leading-relaxed">
-          <span className="font-bold">Email:</span> tailocvina.work@gmail.com
+          <span className="font-bold">Email:</span> phelieutailocvina@gmail.com
         </p>
       </div>
       <div className="pb-7">
