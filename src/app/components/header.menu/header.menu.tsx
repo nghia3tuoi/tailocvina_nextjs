@@ -55,7 +55,7 @@ const MenuHeader = ({ handleToggleMenu, menuRef }: Props) => {
                 <li>
                   <Link
                      href="/thu-mua-vai-vun-gia-cao"
-                    className="block text-[#8b8b8b] uppercase text-xs font-medium py-2 hover:text-black"
+                    className="block text-[#8b8b8b] uppercase text-sm font-medium py-2 pr-2 hover:text-black"
                   onClick={handleToggleMenu}>
                     Thu mua vải vụn số lượng lớn giá cao
                   </Link>
@@ -63,7 +63,7 @@ const MenuHeader = ({ handleToggleMenu, menuRef }: Props) => {
                 <li>
                   <Link
                     href="/thu-gom-xu-ly-rac-thai-gia-re"
-                    className="text-[#8b8b8b] uppercase text-xs font-medium block py-2 hover:text-black"
+                    className="text-[#8b8b8b] uppercase text-sm font-medium block py-2 pr2 hover:text-black"
                   onClick={handleToggleMenu}>
                     Thu Gôm và Xử lí rác giá rẻ
                   </Link>

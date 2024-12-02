@@ -5,7 +5,7 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import PhoneDynamic from "./components/phone-dynamic/phone-dynamic";
 import ZaloDynamic from "./components/zalo-dynamic/zalo-dynamic";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao",
@@ -30,7 +30,6 @@ export default function RootLayout({
         <Footer />
       </body>
       <GoogleAnalytics gaId="G-02KZMDKPZ1" />
-      <GoogleTagManager gtmId="G-02KZMDKPZ1" />
     </html>
   );
 }
