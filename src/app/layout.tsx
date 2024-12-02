@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao chuyên thu mua phế liệu, vãi vụn giá cao, thu gôm và xử lý rác thải công nghiệp giá rẻ với mức giá cạnh tranh nhất trên thị trường.",
   keywords:
-    "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao,công ty tnhh tài lộc vi na, công ty thu mua phế liệu tài lộc vi na, công ty phế liệu tài lộc vi na, phế liệu tài lộc vi na, thu mua phế liệu, tài lộc vi na, phế liệu, thua mua vải vụn, công ty phế liệu",
+    "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao, công ty tnhh tài lộc vi na, công ty thu mua phế liệu tài lộc vi na, công ty phế liệu tài lộc vi na, phế liệu tài lộc vi na, thu mua phế liệu, tài lộc vi na, phế liệu, thua mua vải vụn, công ty phế liệu",
 };
 
 export default function RootLayout({

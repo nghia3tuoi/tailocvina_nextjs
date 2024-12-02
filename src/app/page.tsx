@@ -52,9 +52,9 @@ export default function Home() {
           </p>
           <Link
             href="tel:0989015053"
-            className=" gap-2 text-textPrimary sm:text-xl bg-colorPrimary p-2 rounded-md flex justify-center items-center mx-auto max-w-[300px] hover:opacity-90"
+            className="gap-2 text-textPrimary sm:text-xl bg-colorPrimary p-2 rounded-md flex justify-center items-center mx-auto max-w-[300px] hover:opacity-90"
             aria-label="liên hệ phế liệu tài lộc vi na qua số điện thoại"
-            target="_parent"
+            target="_blank"
           >
             <FaPhoneAlt className="text-textPrimary  sm:text-xl" />
             <p className="uppercase text-textPrimary sm:text-xl ">Gọi ngay</p>
