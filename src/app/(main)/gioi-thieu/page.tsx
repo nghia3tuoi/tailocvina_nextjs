@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Giới Thiệu Công Ty Thu Mua Phế Liệu Giá Cao | Tài Lộc Vi Na",
+  title: "Giới Thiệu Công Ty Thu Mua Phế Liệu giá cao Giá Cao | Tài Lộc Vi Na",
   description:
     "Phế Liệu Tài Lộc Vi Na tự hào là đơn vị thu mua phế liệu giá cao nhất cả nước. Căn cứ vào tình trạng phế liệu cũng như khả năng tái chế của nó, Phế Liệu Phát Tài Lộc sẽ thông báo cho khách hàng mức giá thu mua xứng đáng nhất.",
   alternates: {
@@ -32,14 +32,13 @@ const GioiThieu = () => {
     <div className="mx-auto container px-4">
       <div className="pt-7">
         <h1 className="text-2xl lg:text-3xl font-bold mb-7 uppercase text-center">
-          Giới thiệu - Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na Thu Mua Phế Liệu
-          Giá Cao
+          Giới thiệu Công Ty Thu Mua Phế Liệu giá cao | Tài Lộc Vi Na
         </h1>
         <p className="text-justify leading-relaxed">
-          <strong>Công ty thu mua phế liệu Tài Lộc Vi Na </strong> chuyên thu
-          mua vải vụn số lượng lớn, phế liệu, hàng tồn, xử lí rác công nghiệp
-          tại các tỉnh thành, chủ yếu là các tỉnh phía Nam như Đồng Nai, Bình
-          Dương, Tp HCM, Long An, Vũng Tàu, Miền Tây,…
+          Công ty thu mua phế liệu giá cao Tài Lộc Vi Na chuyên thu mua vải vụn
+          số lượng lớn, phế liệu, hàng tồn, xử lí rác công nghiệp tại các tỉnh
+          thành, chủ yếu là các tỉnh phía Nam như Đồng Nai, Bình Dương, Tp HCM,
+          Long An, Vũng Tàu, Miền Tây,…
         </p>
         <br />
 
@@ -52,37 +51,75 @@ const GioiThieu = () => {
         <br />
         <p className="text-justify leading-relaxed">
           Chúng tôi chuyên thu mua tất cả các loại phế liệu với số lượng lớn,
-          như
-          <strong>
-            {" "}
-            thu mua vải vụn, thu mua phế liệu kim loại, giấy, bao bì, nhựa, thu
-            mua phế liệu đồng, thu mua phế liệu nhôm, thu mua phế liệu inox, thu
-            mua phế liệu kẽm
-          </strong>{" "}
-          , tất cả các loại phế liệu có thể tái chế , thu gôm và xử lý rác thải
-          công nghiệp.
+          như thu mua vải vụn, thu mua phế liệu kim loại, giấy, bao bì, nhựa,
+          thu mua phế liệu đồng, thu mua phế liệu nhôm, thu mua phế liệu inox,
+          thu mua phế liệu kẽm , tất cả các loại phế liệu có thể tái chế , thu
+          gôm và xử lý rác thải công nghiệp.
         </p>
         <br />
         <p className="text-justify leading-relaxed">
-          Quý khách có nhu cầu bán phế liệu, xin vui lòng liên hệ:{" "}
-          <strong> 0989 015 053 </strong>
+          Quý khách có nhu cầu bán phế liệu, xin vui lòng liên hệ: 0989 015 053
           để được tư vấn dịch vụ thu mua chu đáo nhất.
         </p>
       </div>
       <div>
         <h2 className="text-lg  font-bold mt-7 mb-3">
-          Chúng Tôi Thu Mua Phế Liệu Số Lượng Lớn
+          CÔNG TY THU MUA PHẾ LIỆU TÀI LỘC VI NA NHẬN THU MUA CÁC LOẠI PHẾ LIỆU
         </h2>
-        <p className="text-justify leading-relaxed">
-          Công ty TNHH Tài Lộc Vi Na chuyên thu mua các loại phế liệu như sắt
-          thép, nhôm, đồng, inox, giấy vụn, nhựa và nhiều loại vật liệu tái chế
-          khác. Chúng tôi nhận thu mua phế liệu số lượng lớn từ các doanh
-          nghiệp, xí nghiệp, nhà máy, công trình xây dựng, giúp khách hàng giảm
-          thiểu chi phí và tăng cường bảo vệ môi trường.
-        </p>
+        <ul className="list-disc leading-loose ml-6">
+          <li>Thu mua bo mạch, IC, chip, linh kiện, thiết bị điện tử,…</li>
+          <li>
+            Thu mua máy móc cũ, dây chuyền sản xuất, tàu thuyền, mỏ neo, ô tô,
+            xe buýt, xe máy,… hết hạn sử dụng, hư hỏng, thanh lý
+          </li>
+          <li>
+            Thu mua phế liệu giấy các loại: carton, giấy lộn, giấy in, bao bì
+            giấy,…
+          </li>
+          <li>
+            Thu mua phế liệu vải các loại, sản phẩm từ vải lỗi thời, tồn kho,
+            sản xuất lỗi, hàng quá đát,..
+          </li>
+          <li>
+            Nhận mua mọi mặt hàng thanh lý từ nhà xưởng, nhà máy, công ty,…
+          </li>
+          <li>
+            Thu mua Phế liệu inox: đồ dùng, thiết bị inox, inox thanh các loại
+            410, 420, 430, 630,…
+          </li>
+          <li>
+            Thu mua Phế liệu nhôm: nhôm đặc, nguyên chất, nhôm trắng, nhôm định
+            hình, nhôm thanh đồ dùng nhôm, nhôm xingfa, nhôm dẻo, nhôm số, nhôm
+            vụn, hợp kim nhôm…
+          </li>
+          <li>
+            Thu mua Phế liệu chì: bình ắc quy, chì x quang, chì dẻo, chì lưới,
+            chì cục, chì thanh,…
+          </li>
+          <li>
+            Thu mua Phế liệu nhựa (ABS, PVC, PC,…): nhựa dẻo, nhựa cứng, ống
+            nhựa, thùng nhựa, pallet nhựa, nilon dẻo, nilon sữa,…
+          </li>
+          <li>
+            Thu mua Phế liệu sắt: sắt gia dụng, máy sắt, thùng sắt, sắt thanh,
+            sắt vụn, sắt xây dựng, hợp kim sắt,…
+          </li>
+          <li>
+            Thu mua Phế liệu đồng: đồng cáp, đồng thau, dây đồng, đồng mô tơ,
+            máy biến thế, hợp kim đồng,…
+          </li>
+          <li>
+            Thu mua Phế liệu công trình: thép công trình, xây dựng, vật liệu
+            thép thanh lý,…
+          </li>
+          <li>
+            Vật dụng, phụ tùng xi mạ, niken, gang… hoen gỉ, hàng tồn thanh lý sử
+            dụng hoặc thanh lý phế.
+          </li>
+        </ul>
       </div>
       <div>
-        <h2 className="text-lg  font-bold mt-7 mb-3">
+        <h2 className="text-lg  font-bold mt-7 mb-3 uppercase">
           Chúng Tôi Thu Mua Vải Vụn Số Lượng Lớn
         </h2>
         <p className="text-justify leading-relaxed">
@@ -94,7 +131,7 @@ const GioiThieu = () => {
         </p>
       </div>
       <div>
-        <h2 className="text-lg  font-bold mt-7 mb-3">
+        <h2 className="text-lg  font-bold mt-7 mb-3 uppercase">
           Chúng Tôi Thu gom và xử lý rác thải công nghiệp
         </h2>
         <p className="text-justify leading-relaxed">
@@ -107,8 +144,8 @@ const GioiThieu = () => {
         </p>
       </div>
       <div>
-        <h2 className="text-lg font-bold mt-7 mb-3">
-          Thu mua phế liệu Tài Lộc Vi Na uy tín – nhanh gọn – giá cao
+        <h2 className="text-lg font-bold mt-7 mb-3 uppercase">
+           uy tín – nhanh gọn – giá cao
         </h2>
         <p className="mb-2">
           Với phương châm “Luôn đáp ứng nhu cầu của khách hàng “, chúng tôi đảm
@@ -143,7 +180,7 @@ const GioiThieu = () => {
         </p>
       </div>
       <div>
-        <h2 className="text-lg  font-bold mt-7 mb-3 capitalize">
+        <h2 className="text-lg  font-bold mt-7 mb-3 uppercase">
           Thông tin liên hệ Thu Mua Phế Liệu Tài Lộc Vi Na
         </h2>
         <p className="text-justify leading-relaxed">
@@ -159,24 +196,25 @@ const GioiThieu = () => {
         </p>
       </div>
       <div className="pb-7">
-        <h2 className="text-xl  font-bold mt-7 mb-3 capitalize">
-          Thông tin Giấy phép kinh doanh của công ty TNHH Tài Lộc Vi Na
+        <h2 className="text-xl  font-bold mt-7 mb-3  uppercase">
+          Thông tin Giấy phép kinh doanh của công ty thu mua phế liệu giá cao
+          Tài Lộc Vi Na
         </h2>
         <p className="text-justify leading-relaxed">
-          Công ty TNHH Tài Lộc Vi Na tự hào là một trong những đơn vị uy tín tại
-          Việt Nam, chuyên cung cấp các dịch vụ thu mua phế liệu, vải vụn số
-          lượng lớn và xử lý rác thải công nghiệp. Để đảm bảo chất lượng dịch vụ
-          và tuân thủ pháp luật, công ty chúng tôi đã hoàn tất các thủ tục pháp
-          lý và sở hữu Giấy phép kinh doanh hợp pháp.
+          Công ty thu mua phế liệu giá cao Tài Lộc Vi Na tự hào là một trong
+          những đơn vị uy tín tại Việt Nam, chuyên cung cấp các dịch vụ thu mua
+          phế liệu, vải vụn số lượng lớn và xử lý rác thải công nghiệp. Để đảm
+          bảo chất lượng dịch vụ và tuân thủ pháp luật, công ty chúng tôi đã
+          hoàn tất các thủ tục pháp lý và sở hữu Giấy phép kinh doanh hợp pháp.
         </p>
         <br />
         <p className="text-justify leading-relaxed">
-          Giấy phép kinh doanh của công ty TNHH Tài Lộc Vi Na được cấp bởi cơ
-          quan chức năng có thẩm quyền, với các thông tin chi tiết về ngành nghề
-          hoạt động, địa chỉ, số đăng ký kinh doanh và các giấy tờ pháp lý liên
-          quan. Đây là cơ sở để chúng tôi thực hiện các hoạt động thu mua phế
-          liệu và xử lý rác thải công nghiệp một cách chính thống và tuân thủ
-          các quy định của pháp luật.
+          Giấy phép kinh doanh của công ty thu mua phế liệu giá cao Tài Lộc Vi
+          Na được cấp bởi cơ quan chức năng có thẩm quyền, với các thông tin chi
+          tiết về ngành nghề hoạt động, địa chỉ, số đăng ký kinh doanh và các
+          giấy tờ pháp lý liên quan. Đây là cơ sở để chúng tôi thực hiện các
+          hoạt động thu mua phế liệu và xử lý rác thải công nghiệp một cách
+          chính thống và tuân thủ các quy định của pháp luật.
         </p>
         <div className="flex flex-col items-center gap-y-2 md:gap-x-5 md:flex-row  md:justify-center mt-7">
           <Image
@@ -201,13 +239,13 @@ const GioiThieu = () => {
         </div>
         <br />
         <p className="text-justify leading-relaxed">
-          Công ty TNHH Tài Lộc Vi Na luôn đặt mục tiêu bảo vệ môi trường lên
-          hàng đầu. Chúng tôi cam kết thực hiện các dịch vụ thu mua và xử lý phế
-          liệu, vải vụn, và rác thải công nghiệp không chỉ tuân thủ pháp luật mà
-          còn góp phần giảm thiểu ô nhiễm môi trường. Giấy phép kinh doanh của
-          công ty chứng minh rằng chúng tôi hoạt động trong khuôn khổ pháp lý,
-          đồng thời hỗ trợ cộng đồng trong việc bảo vệ sức khỏe và phát triển
-          bền vững.
+          Công ty thu mua phế liệu giá cao Tài Lộc Vi Na luôn đặt mục tiêu bảo
+          vệ môi trường lên hàng đầu. Chúng tôi cam kết thực hiện các dịch vụ
+          thu mua và xử lý phế liệu, vải vụn, và rác thải công nghiệp không chỉ
+          tuân thủ pháp luật mà còn góp phần giảm thiểu ô nhiễm môi trường. Giấy
+          phép kinh doanh của công ty chứng minh rằng chúng tôi hoạt động trong
+          khuôn khổ pháp lý, đồng thời hỗ trợ cộng đồng trong việc bảo vệ sức
+          khỏe và phát triển bền vững.
         </p>
         <br />
         <p className="text-justify leading-relaxed">

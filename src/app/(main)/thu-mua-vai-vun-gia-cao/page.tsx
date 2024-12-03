@@ -31,10 +31,10 @@ const ThuMuaVaiVunGiaCao = () => {
     <div className="container mx-auto px-4">
       <div className="mt-7">
         <h1 className="font-bold text-2xl lg:text-3xl text-center mb-7">
-          THU MUA VẢI VỤN GIÁ CAO SỐ LƯỢNG LỚN
+          THU MUA VẢI VỤN GIÁ CAO SỐ LƯỢNG LỚN | TÀI LỘC VI NA
         </h1>
         <p className="text-justify leading-relaxed">
-          <strong>Công ty TNHH Tài Lộc Vi Na</strong> chuyên thu mua vải vụn giá
+          <strong className="text-blue-700">Công ty thu mua Phế Liệu Tài Lộc Vi Na</strong> chuyên thu mua vải vụn giá
           cao, thu gom vải vụn công nghiệp số lượng lớn từ các nhà máy, xưởng
           may, và các cơ sở sản xuất. Chúng tôi cam kết giá thu mua cạnh tranh
           nhất thị trường, hỗ trợ vận chuyển tận nơi, thanh toán nhanh chóng và
@@ -119,7 +119,7 @@ const ThuMuaVaiVunGiaCao = () => {
         </h2>
         <ul className="list-disc ml-7 text-justify leading-relaxed">
           <li>Hotline: 0989 015 053</li>
-          <li>Email: tailocvina.work@gmail.com</li>
+          <li>Email: phelieutailocvina@gmail.com</li>
           <li>
             Địa chỉ: Thửa đất số 1046, tờ bản đồ số 171, khu phố Hòa Lân 2,
             Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam.

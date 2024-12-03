@@ -6,7 +6,8 @@ export const metadata: Metadata = {
   description: "Thu gôm xử lý rác thải giá rẻ",
   keywords: "Thu gôm xử lý rác thải giá rẻ",
   alternates: {
-    canonical: "https://www.phelieutailocvina.com/thu-gom-xu-ly-rac-thai-gia-re",
+    canonical:
+      "https://www.phelieutailocvina.com/thu-gom-xu-ly-rac-thai-gia-re",
   },
   openGraph: {
     title: "Thu gôm xử lý rác thải giá rẻ | Tài Lộc Vi Na",
@@ -30,16 +31,20 @@ const XuLiRacThai = () => {
   return (
     <div className="container mx-auto px-4">
       <h1 className="text-2xl lg:text-3xl font-bold text-center mb-7 uppercase mt-7 ">
-        Thu gom, vận chuyển và xử lý rác thải giá rẻ
+        Thu gom, vận chuyển và xử lý rác thải giá rẻ | Tài Lộc Vi Na
       </h1>
       <div className="mt-7">
         <p>
-          <strong> Công Ty TNHH Tài Lộc Vi Na</strong> cung cấp dịch vụ thu gom
-          và xử lý rác thải hiệu quả với mức giá rẻ và hợp lý, phù hợp với nhu
-          cầu của các doanh nghiệp và cá nhân. Chúng tôi chuyên thu gom rác thải
-          công nghiệp, sinh hoạt và các loại rác thải khó xử lý, giúp bạn giải
-          quyết vấn đề về môi trường một cách nhanh chóng và tiết kiệm, liên hệ
-          <strong> 0989 015 053</strong>.
+          <strong className="text-blue-700">
+            {" "}
+            Công Ty thu mua Phế Liệu Tài Lộc Vi Na
+          </strong>{" "}
+          cung cấp dịch vụ thu gom và xử lý rác thải hiệu quả với mức giá rẻ và
+          hợp lý, phù hợp với nhu cầu của các doanh nghiệp và cá nhân. Chúng tôi
+          chuyên thu gom rác thải công nghiệp, sinh hoạt và các loại rác thải
+          khó xử lý, giúp bạn giải quyết vấn đề về môi trường một cách nhanh
+          chóng và tiết kiệm, liên hệ
+          <strong className="text-blue-700"> 0989 015 053</strong>.
         </p>
       </div>
       <div className="mt-7">
@@ -145,14 +150,26 @@ const XuLiRacThai = () => {
         </p>
         <ul className="text-justify leading-relaxed">
           <li>
-            <strong>Hotline: 0989 015 053</strong>
+            <p>
+              <strong>Hotline:</strong> 0989 015 053
+            </p>
           </li>
           <li>
-            <strong>Email: tailocvina.work@gmail.com</strong>
+            <p>
+              <strong>Email:</strong> phelieutailocvina@gmail.com
+            </p>
           </li>
           <li>
-            Địa chỉ: Thửa đất số 1046, tờ bản đồ số 171, khu phố Hòa Lân 2,
-            Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam.
+            <p>
+              <strong>Website:</strong> https://www.phelieutailocvina.com/
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong> Địa chỉ:</strong> Thửa đất số 1046, tờ bản đồ số 171, khu
+              phố Hòa Lân 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình
+              Dương, Việt Nam.
+            </p>
           </li>
         </ul>
       </div>

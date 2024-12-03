@@ -57,7 +57,7 @@ const Footer = () => {
                     <p className="text-white/70">Website</p>
                   </div>
                   <p className="text-white  pl-6 text-sm">
-                    phelieutailocvina.com
+                    https://www.phelieutailocvina.com/
                   </p>
                 </div>
 

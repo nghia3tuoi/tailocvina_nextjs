@@ -134,7 +134,7 @@ const Question = () => {
                   Công Ty Phế Liệu Tài Lộc Vi Na{" "}
                 </strong>
                 tư vấn báo giá phế liệu nhanh chóng và hoàn toàn miễn phí, chỉ
-                cần một cuộc gọi đến số điện thọai <strong>0989 015 053</strong>
+                cần một cuộc gọi đến số điện thọai <strong className="text-blue-700">0989 015 053</strong>
                 . Hoặc khách hàng có thể tự tra cứu vì mọi thông tin chi tiết về
                 bảng giá phế liệu sẽ được cập nhật định kỳ trên website của công
                 ty chúng tôi.
@@ -178,7 +178,7 @@ const Question = () => {
                   Tài Lộc Vi Na{" "}
                 </strong>{" "}
                 qua Zalo
-                <strong> 0989 015 053</strong>. Sau đó gửi hình ảnh phế liệu của
+                <strong className="text-blue-700"> 0989 015 053</strong>. Sau đó gửi hình ảnh phế liệu của
                 doanh nghiệp bạn cho chúng tôi. Chúng tôi sẽ thẩm định và báo
                 giá ngay lập tức cho bạn. Đồng thời chúng ta sẽ trao đổi với
                 nhau về mức chiết khấu mà người môi giới sẽ nhận được.

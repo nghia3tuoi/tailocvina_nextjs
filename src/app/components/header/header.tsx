@@ -74,7 +74,7 @@ const Header = () => {
               <div className="flex items-center gap-1">
                 <FaPhoneAlt className="text-textPrimary/70 text-xs" />
                 <p className="text-textPrimary/70 text-xs uppercase">
-                  <strong>0989 015 053</strong>
+                  <strong className="">0989 015 053</strong>
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ const Header = () => {
                 <BsTelephoneInboundFill className="text-xl text-colorPrimary" />
               </div>
               <p className="text-lg ">
-                <strong>0989 015 053</strong>
+                <strong className="">0989 015 053</strong>
               </p>
             </div>
           </div>

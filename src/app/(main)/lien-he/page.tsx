@@ -1,7 +1,6 @@
 import { FaEarthAmericas, FaLocationDot, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { Metadata } from "next";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Thông Tin Liên Hệ | Tài Lộc Vi Na",
@@ -11,40 +10,28 @@ export const metadata: Metadata = {
     canonical: "https://www.phelieutailocvina.com/lien-he",
   },
   openGraph: {
-    title:
-      "Thông Tin Liên Hệ | Tài Lộc Vi Na",
+    title: "Thông Tin Liên Hệ | Tài Lộc Vi Na",
     description:
       "Địa chỉ: khu phố Hòa Lân 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam hoặc liên hệ qua hotline 0989 015 053 để được tư vấn trực tiếp",
     url: "https://www.phelieutailocvina.com/lien-he",
-    siteName:
-      "Phế Liệu Tài Lộc Vi Na",
+    siteName: "Phế Liệu Tài Lộc Vi Na",
     type: "website",
     images: [
       {
         url: "https://www.phelieutailocvina.com/banner.jpg", // Must be an absolute URL
         width: 800,
         height: 400,
-        type: "image/jpg"
+        type: "image/jpg",
       },
     ],
     locale: "vi_VN",
   },
 };
 const Contact = () => {
-  <Head>
-    <title>
-      Liên Hệ - Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na Thu Mua Phế Liệu Giá Cao
-    </title>
-    <link
-      rel="canonical"
-      href="https://www.phelieutailocvina.com/"
-      key="canonical"
-    />
-  </Head>;
   return (
     <div className="container mx-auto px-4">
       <h1 className="uppercase font-bold text-2xl lg:text-3xl text-center mt-7">
-        Liên Hệ - Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na
+        Liên Hệ Công Ty Thu Mua Phế Liệu Giá Cao | Tài Lộc Vi Na
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 pb-7">
         <div className="mt-7  bg-[#f6f6f6] border p-5">
@@ -53,9 +40,10 @@ const Contact = () => {
           </h2>
           <div className="flex flex-col gap-5 text-justify ">
             <p className="leading-loose">
-              Hãy liên hệ ngay với <strong> Công ty TNHH Tài Lộc Vi Na</strong>,
-              đơn vị uy tín chuyên thu mua phế liệu, vải vụn số lượng lớn và xử
-              lý rác thải công nghiệp tại Bình Dương.
+              Hãy liên hệ ngay với{" "}
+              <strong> Công ty thu mua Phế Liệu Tài Lộc Vi Na</strong>, đơn vị
+              uy tín chuyên thu mua phế liệu, vải vụn số lượng lớn và xử lý rác
+              thải công nghiệp tại Bình Dương.
             </p>
 
             <div className="flex gap-2 ">
@@ -83,7 +71,7 @@ const Contact = () => {
               </div>
               <p>
                 <span className="font-bold">Website: </span>
-                phelieutailocvina.com
+                https://www.phelieutailocvina.com/
               </p>
             </div>
 
@@ -113,7 +101,7 @@ const Contact = () => {
             width="100%"
             height="450"
             loading="lazy"
-             title="Bản đồ chỉ đường công ty thu mua phế liệu tài lộc vi na giá cao"
+            title="Bản đồ chỉ đường công ty thu mua phế liệu tài lộc vi na giá cao"
           ></iframe>
         </div>
       </div>
