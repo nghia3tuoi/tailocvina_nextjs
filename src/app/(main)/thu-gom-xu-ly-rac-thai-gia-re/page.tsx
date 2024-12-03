@@ -2,9 +2,28 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Thu Gôm Xử Lí Rác Thải Giá Rẻ - Công Ty TNHH Tài Lộc Vi Na Thu Mua Phế Liệu Giá Cao",
-  description:
-  "Công Ty TNHH Tài Lộc Vi Na cung cấp dịch vụ thu gom và xử lý rác thải giá rẻ, nhanh chóng và hiệu quả. Với nhiều năm kinh nghiệm trong ngành, chúng tôi cam kết mang đến giải pháp xử lý rác thải an toàn, bảo vệ môi trường và tối ưu chi phí cho khách hàng. Liên hệ với chúng tôi để được tư vấn dịch vụ xử lý rác thải tốt nhất.",
+  title: "Thu gôm xử lý rác thải giá rẻ | Phế Liệu Tài Lộc Vi Na",
+  description: "Thu gôm xử lý rác thải giá rẻ",
+  keywords: "Thu gôm xử lý rác thải giá rẻ",
+  alternates: {
+    canonical: "https://www.phelieutailocvina.com/thu-gom-xu-ly-rac-thai-gia-re",
+  },
+  openGraph: {
+    title: "Thu gôm xử lý rác thải giá rẻ | Tài Lộc Vi Na",
+    description: "Thu gôm xử lý rác thải giá rẻ",
+    url: "https://www.phelieutailocvina.com/thu-gom-xu-ly-rac-thai-gia-re",
+    siteName: "Phế Liệu Tài Lộc Vi Na",
+    type: "website",
+    images: [
+      {
+        url: "https://www.phelieutailocvina.com/thu-gom-xu-ly-chat-thai-cong-nghiep-tai-loc-vi-na.jpg", // Must be an absolute URL
+        width: 800,
+        height: 400,
+        type: "image/jpg",
+      },
+    ],
+    locale: "vi_VN",
+  },
 };
 
 const XuLiRacThai = () => {

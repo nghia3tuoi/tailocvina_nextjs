@@ -2,9 +2,29 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Giới Thiệu - Công Ty TNHH Tài Lộc Vi Na Thu Mua Phế Liệu Giá Cao",
+  title: "Giới Thiệu Công Ty Thu Mua Phế Liệu Giá Cao | Tài Lộc Vi Na",
   description:
-    "Công Ty TNHH Tài Lộc Vi Na chuyên thu mua phế liệu giá cao, cam kết uy tín và chất lượng dịch vụ. Với nhiều năm kinh nghiệm trong ngành, chúng tôi cung cấp dịch vụ thu mua phế liệu nhanh chóng, an toàn và bảo vệ môi trường. Khám phá sứ mệnh, tầm nhìn và các giá trị cốt lõi của chúng tôi để hiểu thêm về cam kết của công ty.",
+    "Phế Liệu Tài Lộc Vi Na tự hào là đơn vị thu mua phế liệu giá cao nhất cả nước. Căn cứ vào tình trạng phế liệu cũng như khả năng tái chế của nó, Phế Liệu Phát Tài Lộc sẽ thông báo cho khách hàng mức giá thu mua xứng đáng nhất.",
+  alternates: {
+    canonical: "https://www.phelieutailocvina.com/gioi-thieu",
+  },
+  openGraph: {
+    title: "Giới Thiệu | Tài Lộc Vi Na",
+    description:
+      "Phế Liệu Tài Lộc Vi Na tự hào là đơn vị thu mua phế liệu giá cao nhất cả nước. Căn cứ vào tình trạng phế liệu cũng như khả năng tái chế của nó, Phế Liệu Phát Tài Lộc sẽ thông báo cho khách hàng mức giá thu mua xứng đáng nhất.",
+    url: "https://www.phelieutailocvina.com/gioi-thieu",
+    siteName: "Phế Liệu Tài Lộc Vi Na",
+    type: "website",
+    images: [
+      {
+        url: "https://www.phelieutailocvina.com/phe-lieu-vai-vun.jpg", // Must be an absolute URL
+        width: 800,
+        height: 400,
+        type: "image/jpg",
+      },
+    ],
+    locale: "vi_VN",
+  },
 };
 
 const GioiThieu = () => {
@@ -12,7 +32,8 @@ const GioiThieu = () => {
     <div className="mx-auto container px-4">
       <div className="pt-7">
         <h1 className="text-2xl lg:text-3xl font-bold mb-7 uppercase text-center">
-          Giới thiệu - Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na Thu Mua Phế Liệu Giá Cao
+          Giới thiệu - Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na Thu Mua Phế Liệu
+          Giá Cao
         </h1>
         <p className="text-justify leading-relaxed">
           <strong>Công ty thu mua phế liệu Tài Lộc Vi Na </strong> chuyên thu

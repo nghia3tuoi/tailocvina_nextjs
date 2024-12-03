@@ -9,14 +9,13 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import BackTopDynamic from "./components/backtop-dynamic/backtop-dynamic";
 import { Organization, WithContext } from "schema-dts";
 import Script from "next/script";
-import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao",
+  title: "Công Ty Thu Mua Phế Liệu Giá Cao | Tài Lộc Vi Na",
   description:
-    "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao chuyên thu mua phế liệu, vãi vụn giá cao, thu gôm và xử lý rác thải công nghiệp giá rẻ với mức giá cạnh tranh nhất trên thị trường.",
+    "Công Ty Thu Mua Phế Liệu Giá Cao | Tài Lộc Vi Na chuyên thu mua phế liệu, vãi vụn giá cao, thu gôm và xử lý rác thải công nghiệp giá rẻ với mức giá cạnh tranh nhất trên thị trường.",
   keywords:
-    "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao, công ty tnhh tài lộc vi na, công ty thu mua phế liệu tài lộc vi na, công ty phế liệu tài lộc vi na, phế liệu tài lộc vi na, thu mua phế liệu, tài lộc vi na, phế liệu, thua mua vải vụn, công ty phế liệu",
+    "thu mua phế liệu giá cao, thu mua sắt thép, thu mua vải vải vụn, xử lý rác thải",
 };
 
 const jsonLd: WithContext<Organization> = {
@@ -51,15 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <Head>
-        <title>Phế Liệu Tài Lộc Vi Na</title>
-        <link
-          rel="canonical"
-          href="https://www.phelieutailocvina.com/"
-          key="canonical"
-        />
-      </Head>
+    <html lang="vi">
       <body>
         <Header />
         {children}
@@ -73,6 +64,7 @@ export default function RootLayout({
         id="jsonld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        strategy="lazyOnload"
       />
     </html>
   );

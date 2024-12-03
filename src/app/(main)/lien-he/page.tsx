@@ -4,10 +4,31 @@ import { Metadata } from "next";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  title:
-    "Liên Hệ - Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na Thu Mua Phế Liệu Giá Cao",
+  title: "Thông Tin Liên Hệ | Tài Lộc Vi Na",
   description:
-    "Liên hệ với Công Ty Thu Mua Phế Liệu Tài Lộc Vi Na, chuyên thu mua phế liệu giá cao, uy tín và chuyên nghiệp. Chúng tôi cam kết mang lại giá trị tối đa cho khách hàng qua dịch vụ thu mua phế liệu nhanh chóng, an toàn. Hãy liên hệ với chúng tôi ngay hôm nay để nhận báo giá tốt nhất.",
+    "Địa chỉ: khu phố Hòa Lân 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam hoặc liên hệ qua hotline 0989 015 053 để được tư vấn trực tiếp",
+  alternates: {
+    canonical: "https://www.phelieutailocvina.com/lien-he",
+  },
+  openGraph: {
+    title:
+      "Thông Tin Liên Hệ | Tài Lộc Vi Na",
+    description:
+      "Địa chỉ: khu phố Hòa Lân 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam hoặc liên hệ qua hotline 0989 015 053 để được tư vấn trực tiếp",
+    url: "https://www.phelieutailocvina.com/lien-he",
+    siteName:
+      "Phế Liệu Tài Lộc Vi Na",
+    type: "website",
+    images: [
+      {
+        url: "https://www.phelieutailocvina.com/banner.jpg", // Must be an absolute URL
+        width: 800,
+        height: 400,
+        type: "image/jpg"
+      },
+    ],
+    locale: "vi_VN",
+  },
 };
 const Contact = () => {
   <Head>

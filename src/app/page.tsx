@@ -4,35 +4,37 @@ import Question from "./components/home.question/home.question";
 import FeedBack from "./components/home.feedback/home.feedback";
 import Link from "next/link";
 import { Metadata } from "next";
-import Head from "next/head";
+
 export const metadata: Metadata = {
-  title: "Tài Lộc Vi Na - Công Ty Thu Mua Phế Liệu Giá Cao",
+  title: "Công Ty Thu Mua Phế Liệu Giá Cao | Tài Lộc Vi Na",
   description:
-    "Công Ty Thu Mua Phế Liệu Giá Cao - Tài Lộc Vi Na chuyên thu mua phế liệu giá cao, uy tín và chuyên nghiệp. Chúng tôi cam kết mang lại giá trị tối đa cho khách hàng qua dịch vụ thu mua phế liệu nhanh chóng, an toàn. Hãy liên hệ với chúng tôi ngay hôm nay để nhận báo giá tốt nhất.",
+    "Công ty thu mua phế liệu giá cao Tài Lộc Vi Na tận nơi uy tín tại TPHCM, Bình Dương, Long An....Giá phế liệu cao nhất hôm nay, Cân đo chuẩn xác, Thanh toán liền tay",
+  alternates: {
+    canonical: "https://www.phelieutailocvina.com/",
+  },
+  openGraph: {
+    title:
+      "Công Ty Thu Mua Phế Liệu Giá Cao Bình Dương & Toàn Quốc | Tài Lộc Vi Na",
+    description:
+      "Công ty thu mua phế liệu giá cao Tài Lộc Vi Na tận nơi uy tín tại TPHCM, Bình Dương, Long An....Giá phế liệu cao nhất hôm nay, Cân đo chuẩn xác, Thanh toán liền tay",
+    url: "https://www.phelieutailocvina.com/",
+    siteName:
+      "Công Ty Thu Mua Phế Liệu Giá Cao Bình Dương & Toàn Quốc | Tài Lộc Vi Na",
+    type: "website",
+    images: [
+      {
+        url: "https://www.phelieutailocvina.com/only-vertical.svg", // Must be an absolute URL
+        width: 250,
+        height: 250,
+      },
+    ],
+    locale: "vi_VN",
+  },
 };
+
 export default function Home() {
   return (
     <div>
-      <Head>
-       
-        <meta
-          property="og:title"
-          content="Công Ty Thu Mua Phế Liệu Giá Cao - Tài Lộc Vi Na"
-        />
-        <meta
-          property="og:description"
-          content="Phế Liệu Tài Lộc Vi Na chuyên thu mua phế liệu giá cao, vải vụn, thu gôm xử lí rác thải uy tín và chuyên nghiệp. "
-        />
-        <meta property="og:url" content="https://www.phelieutailocvina.com/" />
-        <meta
-          property="og:image"
-          content="https://www.phelieutailocvina.com/banner.jpg"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Phế Liệu Tài Lộc Vi Na" />
-        <meta property="og:locale" content="vi_VN" />
-      </Head>
       {/* banner */}
       <div className="relative h-[500px] ">
         <Image
@@ -40,7 +42,7 @@ export default function Home() {
           src="/banner.jpg"
           alt="phế liệu Tài Lộc Vi Na"
           fill
-          className="object-cover " // Tùy chỉnh nếu bạn muốn hình ảnh cắt xén hay thu nhỏ theo tỷ lệ
+          className="object-cover w-max h-auto " // Tùy chỉnh nếu bạn muốn hình ảnh cắt xén hay thu nhỏ theo tỷ lệ
           sizes="100vw"
         />
         <div className="bg-white/90 absolute text-center p-8 left-[5%] bottom-[5%] top-[5%] right-[5%] overflow-auto lg:right-[30%] max-w-full">

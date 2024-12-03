@@ -2,10 +2,30 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Thu Mua Vải Vụn Giá Cao - Công Ty TNHH Tài Lộc Vi Na Thu Mua Phế Liệu Giá Cao",
-  description:
-    "Công Ty TNHH Tài Lộc Vi Na chuyên thu mua vải vụn giá cao, cam kết mang đến dịch vụ nhanh chóng, hiệu quả và bảo vệ môi trường. Với nhiều năm kinh nghiệm trong ngành, chúng tôi luôn sẵn sàng cung cấp giải pháp thu mua vải vụn an toàn, tiết kiệm và tối ưu chi phí. Liên hệ với chúng tôi ngay hôm nay để nhận báo giá tốt nhất.",
+  title: "Thu mua Vải Vụn Giá Cao | Phế Liệu Tài Lộc Vi Na",
+  description: "Thu mua vải vụn giá cao nhất",
+  keywords: "Thu mua vải vụn giá cao",
+  alternates: {
+    canonical: "https://www.phelieutailocvina.com/thu-mua-vai-vun-gia-cao",
+  },
+  openGraph: {
+    title: "Thu muua Vải Vụn Giá Cao | Tài Lộc Vi Na",
+    description: "Thu mua vải vụn giá cao nhất",
+    url: "https://www.phelieutailocvina.com/thu-mua-vai-vun-gia-cao",
+    siteName: "Phế Liệu Tài Lộc Vi Na",
+    type: "website",
+    images: [
+      {
+        url: "https://www.phelieutailocvina.com/phe-lieu-vai-vun.jpg", // Must be an absolute URL
+        width: 800,
+        height: 400,
+        type: "image/jpg",
+      },
+    ],
+    locale: "vi_VN",
+  },
 };
+
 const ThuMuaVaiVunGiaCao = () => {
   return (
     <div className="container mx-auto px-4">
