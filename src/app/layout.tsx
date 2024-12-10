@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     "Công Ty Thu Mua Phế Liệu Giá Cao | Tài Lộc Vi Na chuyên thu mua phế liệu, vãi vụn giá cao, thu gôm và xử lý rác thải công nghiệp giá rẻ với mức giá cạnh tranh nhất trên thị trường.",
   keywords:
     "thu mua phế liệu giá cao, thu mua sắt thép, thu mua vải vải vụn, xử lý rác thải",
+  verification: {
+    google:
+      "google-site-verification=lbXrnx37vX692c1HSZ2XT12xQiSHbPvJEWenQxhJdjQ",
+  },
 };
 
 const jsonLd: WithContext<Organization> = {
