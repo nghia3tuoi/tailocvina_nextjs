@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "thu mua phế liệu giá cao, thu mua sắt thép, thu mua vải vải vụn, xử lý rác thải",
   verification: {
     google:
-      "google-site-verification=lbXrnx37vX692c1HSZ2XT12xQiSHbPvJEWenQxhJdjQ",
+      "lbXrnx37vX692c1HSZ2XT12xQiSHbPvJEWenQxhJdjQ",
   },
 };
 
