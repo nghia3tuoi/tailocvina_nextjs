@@ -9,7 +9,6 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import BackTopDynamic from "./components/backtop-dynamic/backtop-dynamic";
 import { Organization, WithContext } from "schema-dts";
 import Script from "next/script";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Công Ty Thu Mua Phế Liệu Giá Cao | Tài Lộc Vi Na",
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
     "thu mua phế liệu giá cao, thu mua sắt thép, thu mua vải vải vụn, xử lý rác thải",
   verification: {
     google:
-      "google-site-verification=lbXrnx37vX692c1HSZ2XT12xQiSHbPvJEWenQxhJdjQ",
+      "lbXrnx37vX692c1HSZ2XT12xQiSHbPvJEWenQxhJdjQ",
   },
 };
 
@@ -56,12 +55,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="lbXrnx37vX692c1HSZ2XT12xQiSHbPvJEWenQxhJdjQ"
-        />
-      </Head>
       <body>
         <Header />
         {children}
