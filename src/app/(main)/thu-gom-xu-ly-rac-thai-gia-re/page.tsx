@@ -86,6 +86,7 @@ const XuLiRacThai = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-7">
         <Image
+          unoptimized
           src="/Thu-gom-xu-ly-chat-thai-nguy-hai-scaled.jpg"
           alt="thu gôm xử lí rác thải giá rẻ"
           layout="responsive"
@@ -94,6 +95,7 @@ const XuLiRacThai = () => {
           sizes="(max-width: 640px) 100vw, 50vw, (max-width: 1024px) 50vw, 33vw"
         />
         <Image
+          unoptimized
           src="/thu-gom-xu-ly-chat-thai-cong-nghiep-tai-loc-vi-na.jpg"
           alt="thu gôm xử lí rác thải giá rẻ"
           layout="responsive"

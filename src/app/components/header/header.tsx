@@ -101,6 +101,7 @@ const Header = () => {
             </div>
             <Link href="/" className="mx-auto md:mx-0 z-10">
               <Image
+                unoptimized
                 src="/logo-horizontal.svg"
                 priority
                 width={0}
@@ -186,14 +187,15 @@ const Header = () => {
                 />
               </div>
               <div className="mx-auto md:mx-0">
-              <Image
-                src="/logo-horizontal.svg"
-                priority
-                width={0}
-                height={0}
-                alt="công ty thu mua phế liệu tài lộc vi na"
-                className="w-60 h-auto"
-              />
+                <Image
+                  unoptimized
+                  src="/logo-horizontal.svg"
+                  priority
+                  width={0}
+                  height={0}
+                  alt="công ty thu mua phế liệu tài lộc vi na"
+                  className="w-60 h-auto"
+                />
               </div>
               <div className="md:flex items-center gap-2 hidden">
                 <div className="border-2 border-colorPrimary rounded-full p-2">

@@ -145,7 +145,7 @@ const GioiThieu = () => {
       </div>
       <div>
         <h2 className="text-lg font-bold mt-7 mb-3 uppercase">
-           uy tín – nhanh gọn – giá cao
+          uy tín – nhanh gọn – giá cao
         </h2>
         <p className="mb-2">
           Với phương châm “Luôn đáp ứng nhu cầu của khách hàng “, chúng tôi đảm
@@ -218,6 +218,7 @@ const GioiThieu = () => {
         </p>
         <div className="flex flex-col items-center gap-y-2 md:gap-x-5 md:flex-row  md:justify-center mt-7">
           <Image
+            unoptimized
             src="/giay-phep-kinh-doanh-tai-loc-vi-na-1-edit.png"
             alt="giay-phep-kinh-doanh-cong-ty-tai-loc-vi-na"
             width={480} // Chiều rộng gốc của ảnh
@@ -228,6 +229,7 @@ const GioiThieu = () => {
           />
 
           <Image
+            unoptimized
             src="/giay-phep-kinh-doanh-tai-loc-vi-na-2-edit.png"
             alt="giay-phep-kinh-doanh-cong-ty-tai-loc-vi-na"
             width={480} // Chiều rộng gốc của ảnh

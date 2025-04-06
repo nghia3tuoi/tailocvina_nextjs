@@ -34,11 +34,13 @@ const ThuMuaVaiVunGiaCao = () => {
           THU MUA VẢI VỤN GIÁ CAO SỐ LƯỢNG LỚN | TÀI LỘC VI NA
         </h1>
         <p className="text-justify leading-relaxed">
-          <strong className="text-blue-700">Công ty thu mua Phế Liệu Tài Lộc Vi Na</strong> chuyên thu mua vải vụn giá
-          cao, thu gom vải vụn công nghiệp số lượng lớn từ các nhà máy, xưởng
-          may, và các cơ sở sản xuất. Chúng tôi cam kết giá thu mua cạnh tranh
-          nhất thị trường, hỗ trợ vận chuyển tận nơi, thanh toán nhanh chóng và
-          chuyên nghiệp.
+          <strong className="text-blue-700">
+            Công ty thu mua Phế Liệu Tài Lộc Vi Na
+          </strong>{" "}
+          chuyên thu mua vải vụn giá cao, thu gom vải vụn công nghiệp số lượng
+          lớn từ các nhà máy, xưởng may, và các cơ sở sản xuất. Chúng tôi cam
+          kết giá thu mua cạnh tranh nhất thị trường, hỗ trợ vận chuyển tận nơi,
+          thanh toán nhanh chóng và chuyên nghiệp.
         </p>
       </div>
       <div className="mt-7">
@@ -76,6 +78,7 @@ const ThuMuaVaiVunGiaCao = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-7">
         <Image
+          unoptimized
           src="/phe-lieu-vai-vun-2.jpg"
           alt="thu mua phế liệu vải vụn giá cao"
           layout="responsive"
@@ -85,6 +88,7 @@ const ThuMuaVaiVunGiaCao = () => {
           priority
         />
         <Image
+          unoptimized
           src="/phe-lieu-vai-vun.jpg"
           alt="thu mua phế liệu vải vụn giá cao"
           layout="responsive"

@@ -59,6 +59,7 @@ const FeedBack = () => {
                 <div className="bg-colorPrimary p-1 rounded-full">
                   <div className="rounded-full  h-24 w-24">
                     <Image
+                      unoptimized
                       src={`/${slide.avatarUrl}`}
                       alt="ý kiến khách hàng từ công ty thu mua phế liệu tài lộc vi na"
                       width={1024} // Cung cấp width và height để Next.js biết kích thước của hình ảnh
